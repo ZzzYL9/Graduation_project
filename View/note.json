@@ -1,0 +1,40 @@
+{ "NOTE": [
+
+{	"book": "0",
+	"users": "a",
+	"thetext": "sds",
+	"thesource": "../../Images/readview/biji.png",
+	"ty": "460",
+	"num": "1",
+	"positionstart": "599",
+	"positionend": "755",
+	"bookimage": "qrc:/book/help/help.jpg",
+	"ttxt": "0"
+	
+},
+{	"book": "0",
+	"users": "a",
+	"thetext": "dsd",
+	"thesource": "../../Images/readview/biji.png",
+	"ty": "526",
+	"num": "1",
+	"positionstart": "692",
+	"positionend": "697",
+	"bookimage": "qrc:/book/help/help.jpg",
+	"ttxt": "0"
+	
+},
+{	"book": "0",
+	"users": "a",
+	"thetext": "hh",
+	"thesource": "../../Images/readview/biji.png",
+	"ty": "460",
+	"num": "2",
+	"positionstart": "601",
+	"positionend": "615",
+	"bookimage": "qrc:/book/help/help.jpg",
+	"ttxt": "0"
+	
+}
+]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<RCC>
+    <qresource prefix="/">
+        <file alias="datemodel.cpp">datemodel.cpp</file>
+        <file alias="datemodel.h">datemodel.h</file>
+        <file alias="main.cpp">main.cpp</file>
+        <file alias="qmldir">qmldir</file>
+
+    </qresource>
+</RCC>
