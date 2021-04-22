@@ -24,7 +24,8 @@ Rectangle{
             height: parent.height;
             anchors.fill:parent;
             anchors.margins: 5
-            source: image
+            source: "../../Images/books_image/Bookshelf_image/csds/" + bookname + ".jpg"
+//            source: "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/万界大起点/万界大起点.jpg"
 //            source: "../../book/" + bookname + "/" + bookname + ".jpg";
 //            source: "qrc"+image
         }
@@ -49,7 +50,6 @@ Rectangle{
             onClicked: {
 //                openSource(index);
 //                console.log(index)
-                console.log(image)
                 openSource(bookindex)
             }
             onEntered: {

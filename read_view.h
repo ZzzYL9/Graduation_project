@@ -16,7 +16,7 @@ public:
     Q_PROPERTY(int booksCount READ booksCount CONSTANT)
     Q_PROPERTY(int currentBook READ currentBook WRITE setCurrentBook NOTIFY currentBookChanged)
 signals:
-     void currentBookChanged(int);
+    void currentBookChanged(int);
 
 public slots:
      QQmlListProperty<Reader_Book> books();
@@ -25,6 +25,8 @@ public slots:
      Reader_Book* booksAt(int index);
      void clearBooks();
 
+     void loadDir(QString path);
+
 public:
 
     void loadHistory();//加载历史记录
@@ -32,7 +34,7 @@ public:
     void sorted();
     int currentBook();
     void setCurrentBook(int index);
-    void loadDir(QString path="/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/");
+//    void loadDir(QString path="/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/");
     //void loadDir(QString path="file:///storage/emulated/0/book/");
     //void loadDir(QString path="./book/");
     QString getContent(QString path); //读取简介文本文件

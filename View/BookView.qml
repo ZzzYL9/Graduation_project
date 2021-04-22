@@ -47,9 +47,11 @@ StackView{
         running: true;
         repeat: false
         onTriggered: {
+            Settings.bookShelf.loadDir("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/")
             setmodel()
         }
     }
+
 
     Rectangle{
         id:bookshelf

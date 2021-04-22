@@ -6,6 +6,7 @@ import QtGraphicalEffects 1.0
 import "../Item/homepage"
 import "./HomeView"
 import "../media"
+import "../"
 
 StackView {
     id:homeview
@@ -83,6 +84,8 @@ StackView {
                                 console.log("处理图片"+picUrl)
                                 console.log("向服务器发送图片名称")
                                 console.log("获取书籍文件，进入阅读界面")
+
+//                                Settings.bookShelf.loadDir("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/")
                             }
                         }
                     }

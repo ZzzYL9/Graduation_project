@@ -8,7 +8,7 @@ Read_View::Read_View(QObject *parent) : QObject(parent)
 {
        m_currentBook=0;
        QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF8")); // 改为GBK编码
-       loadDir();
+//       loadDir();
 
 }
 

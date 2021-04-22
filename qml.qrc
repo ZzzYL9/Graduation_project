@@ -83,7 +83,6 @@
         <file>Item/bookshelf/readview/SettingButton2.qml</file>
         <file>Item/bookshelf/readview/SettingButton3.qml</file>
         <file>Item/bookshelf/AddButton.qml</file>
-        <file>Item/bookshelf/Book_ShelfItem.qml</file>
         <file>Item/homepage/SearchBar.qml</file>
         <file>Item/BaseTabBar.qml</file>
         <file>Item/catalog.png</file>
@@ -148,5 +147,74 @@
         <file>View/HomeView/Man_Sort.qml</file>
         <file>View/HomeView/Woman_Sort.qml</file>
         <file>Item/bookshelf/Sort_ShelfItem.qml</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/乘龙佳婿.jpg</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/大明最后一个狠人.jpg</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/带着军火库闯大明.jpg</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/背着步枪回明朝.jpg</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/重生之老子是皇帝.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/云月不知情起时.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/帝少宠妻有点甜.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/恰似寒光遇骄阳.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/盛世余生多指教.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/许你万丈光芒好.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/医神重生.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/我有无数神剑.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/最强弃少.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/永恒圣王.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/遮天.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/万古最强宗.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/大主宰.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/我的冥王大人.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/沧元图.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/鸿飞剑尊.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/与爱为邻.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/夫人你马甲又掉了.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/女总裁的全能兵王.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/暗黑系暖婚.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/萌宝快递请签收.jpg</file>
+        <file>Item/bookshelf/Book_ShelfItem.qml</file>
+        <file>background_setting.cpp</file>
+        <file>background_setting.h</file>
+        <file>binaryindexedtree.hpp</file>
+        <file>Book_chapter.cpp</file>
+        <file>Book_chapter.h</file>
+        <file>book_settings.cpp</file>
+        <file>book_settings.h</file>
+        <file>curpage_setting.cpp</file>
+        <file>curpage_setting.h</file>
+        <file>downthread.cpp</file>
+        <file>downthread.h</file>
+        <file>filedownload.cpp</file>
+        <file>filedownload.h</file>
+        <file>fileio.cpp</file>
+        <file>fileio.h</file>
+        <file>font_setter.cpp</file>
+        <file>font_setter.h</file>
+        <file>m3ufile.cpp</file>
+        <file>m3ufile.h</file>
+        <file>mediasourse.cpp</file>
+        <file>mediasourse.h</file>
+        <file>qrc_qml.cpp</file>
+        <file>read_view.cpp</file>
+        <file>read_view.h</file>
+        <file>Reader_book.cpp</file>
+        <file>Reader_book.h</file>
+        <file>theme_setting.cpp</file>
+        <file>theme_setting.h</file>
+        <file>Images/books_image/Bookshelf_image/csds/1.jpg</file>
+        <file>Images/books_image/Bookshelf_image/csds/2.jpg</file>
+        <file>Images/books_image/Bookshelf_image/csds/3.jpg</file>
+        <file>Images/books_image/Bookshelf_image/csds/4.jpg</file>
+        <file>Images/books_image/Bookshelf_image/csds/5.jpg</file>
+        <file>Images/books_image/Bookshelf_image/gdyq/1.jpg</file>
+        <file>Images/books_image/Bookshelf_image/gdyq/2.jpg</file>
+        <file>Images/books_image/Bookshelf_image/gdyq/3.jpg</file>
+        <file>Images/books_image/Bookshelf_image/gdyq/4.jpg</file>
+        <file>Images/books_image/Bookshelf_image/gdyq/5.jpg</file>
+        <file>Images/books_image/Bookshelf_image/hxyq/1.jpg</file>
+        <file>Images/books_image/Bookshelf_image/hxyq/2.jpg</file>
+        <file>Images/books_image/Bookshelf_image/hxyq/3.jpg</file>
+        <file>Images/books_image/Bookshelf_image/hxyq/4.jpg</file>
+        <file>Images/books_image/Bookshelf_image/hxyq/5.jpg</file>
     </qresource>
 </RCC>

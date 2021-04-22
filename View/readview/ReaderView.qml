@@ -71,6 +71,7 @@ Rectangle{
             }
         }
 
+        //存储数据——————————————————————————
         var data = {"users":"a","book":Settings.bookShelf.currentBook,"thetext":arguments[1],"thesource":"../../Images/readview/biji.png","num":num,"ty":arguments[3],"bookimage":"qrc"+Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).image,"positionstart":arguments[2],"positionend":arguments[4],"ttxt":Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart};
         m.append(data)
         fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/note.json")

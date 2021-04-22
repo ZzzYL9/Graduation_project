@@ -24,7 +24,7 @@ Rectangle{
             height: parent.height;
             anchors.fill:parent;
             anchors.margins: 1
-            source: "qrc"+image
+            source: "../../Images/books_image/Bookshelf_image/" + bookname + ".jpg"
         }
 
         Rectangle{
