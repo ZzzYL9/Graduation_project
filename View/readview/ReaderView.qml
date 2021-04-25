@@ -604,7 +604,7 @@ Rectangle{
                             //root.visible=0;
                             //views.isSetting=0;
                             //当点击返回时，顶底部导航栏显示，swipeview滑动界面减去导航栏，并且swipeview可以滑动
-
+                            Settings.bookShelf.clearBooks()
                             if(type==0){
                                bookstack.clear()
                                //删除读取的内容----------------------
@@ -612,6 +612,8 @@ Rectangle{
                             }else{
                                mynotes.clear();
                             }
+
+
 
                             topBars.visible=true;
                             basebar.visible=true;

@@ -26,6 +26,8 @@ public slots:
      void clearBooks();
 
      void loadDir(QString path);
+//     void Load_Book(QString path);
+     void loadBook(QString path,QString name,int index);
 
 public:
 
@@ -38,7 +40,7 @@ public:
     //void loadDir(QString path="file:///storage/emulated/0/book/");
     //void loadDir(QString path="./book/");
     QString getContent(QString path); //读取简介文本文件
-    void loadBook(QString path,QString name,int index);
+
     static void appendBooks(QQmlListProperty<Reader_Book>*,Reader_Book *chapter);
     static int booksCount(QQmlListProperty<Reader_Book>*);
     static Reader_Book * booksAt(QQmlListProperty<Reader_Book>*,int index);

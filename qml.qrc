@@ -147,31 +147,6 @@
         <file>View/HomeView/Man_Sort.qml</file>
         <file>View/HomeView/Woman_Sort.qml</file>
         <file>Item/bookshelf/Sort_ShelfItem.qml</file>
-        <file>Images/books_image/Bookshelf_image/lsjs/乘龙佳婿.jpg</file>
-        <file>Images/books_image/Bookshelf_image/lsjs/大明最后一个狠人.jpg</file>
-        <file>Images/books_image/Bookshelf_image/lsjs/带着军火库闯大明.jpg</file>
-        <file>Images/books_image/Bookshelf_image/lsjs/背着步枪回明朝.jpg</file>
-        <file>Images/books_image/Bookshelf_image/lsjs/重生之老子是皇帝.jpg</file>
-        <file>Images/books_image/Bookshelf_image/mtxy/云月不知情起时.jpg</file>
-        <file>Images/books_image/Bookshelf_image/mtxy/帝少宠妻有点甜.jpg</file>
-        <file>Images/books_image/Bookshelf_image/mtxy/恰似寒光遇骄阳.jpg</file>
-        <file>Images/books_image/Bookshelf_image/mtxy/盛世余生多指教.jpg</file>
-        <file>Images/books_image/Bookshelf_image/mtxy/许你万丈光芒好.jpg</file>
-        <file>Images/books_image/Bookshelf_image/pmxx/医神重生.jpg</file>
-        <file>Images/books_image/Bookshelf_image/pmxx/我有无数神剑.jpg</file>
-        <file>Images/books_image/Bookshelf_image/pmxx/最强弃少.jpg</file>
-        <file>Images/books_image/Bookshelf_image/pmxx/永恒圣王.jpg</file>
-        <file>Images/books_image/Bookshelf_image/pmxx/遮天.jpg</file>
-        <file>Images/books_image/Bookshelf_image/rxxh/万古最强宗.jpg</file>
-        <file>Images/books_image/Bookshelf_image/rxxh/大主宰.jpg</file>
-        <file>Images/books_image/Bookshelf_image/rxxh/我的冥王大人.jpg</file>
-        <file>Images/books_image/Bookshelf_image/rxxh/沧元图.jpg</file>
-        <file>Images/books_image/Bookshelf_image/rxxh/鸿飞剑尊.jpg</file>
-        <file>Images/books_image/Bookshelf_image/xdyq/与爱为邻.jpg</file>
-        <file>Images/books_image/Bookshelf_image/xdyq/夫人你马甲又掉了.jpg</file>
-        <file>Images/books_image/Bookshelf_image/xdyq/女总裁的全能兵王.jpg</file>
-        <file>Images/books_image/Bookshelf_image/xdyq/暗黑系暖婚.jpg</file>
-        <file>Images/books_image/Bookshelf_image/xdyq/萌宝快递请签收.jpg</file>
         <file>Item/bookshelf/Book_ShelfItem.qml</file>
         <file>background_setting.cpp</file>
         <file>background_setting.h</file>
@@ -216,5 +191,30 @@
         <file>Images/books_image/Bookshelf_image/hxyq/3.jpg</file>
         <file>Images/books_image/Bookshelf_image/hxyq/4.jpg</file>
         <file>Images/books_image/Bookshelf_image/hxyq/5.jpg</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/1.jpg</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/2.jpg</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/3.jpg</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/4.jpg</file>
+        <file>Images/books_image/Bookshelf_image/lsjs/5.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/1.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/2.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/3.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/4.jpg</file>
+        <file>Images/books_image/Bookshelf_image/mtxy/5.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/1.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/2.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/3.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/4.jpg</file>
+        <file>Images/books_image/Bookshelf_image/pmxx/5.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/1.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/2.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/3.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/4.jpg</file>
+        <file>Images/books_image/Bookshelf_image/rxxh/5.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/1.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/2.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/3.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/4.jpg</file>
+        <file>Images/books_image/Bookshelf_image/xdyq/5.jpg</file>
     </qresource>
 </RCC>

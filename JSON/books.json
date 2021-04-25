@@ -2,7 +2,7 @@
     "BOOKS": [
         {
             "user":"visitor",
-            "book_num":"0",
+            "book_index":"0",
             "type_num":"0",
             "type_name":"畅爽都市",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/",
@@ -10,11 +10,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/csds/1.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"0"
+        },
         {
             "user":"visitor",
-            "book_num":"1",
+            "book_index":"1",
             "type_num":"0",
             "type_name":"畅爽都市",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/",
@@ -22,11 +22,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/csds/2.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"2",
+            "book_index":"2",
             "type_num":"0",
             "type_name":"畅爽都市",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/",
@@ -34,11 +34,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/csds/3.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"0"
+        },
         {
             "user":"visitor",
-            "book_num":"3",
+            "book_index":"3",
             "type_num":"0",
             "type_name":"畅爽都市",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/",
@@ -46,11 +46,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/csds/4.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"4",
+            "book_index":"4",
             "type_num":"0",
             "type_name":"畅爽都市",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/",
@@ -58,12 +58,12 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/csds/5.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         
         {
             "user":"visitor",
-            "book_num":"0",
+            "book_index":"0",
             "type_num":"1",
             "type_name":"热血玄幻",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
@@ -71,11 +71,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/1.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"0"
+        },
         {
             "user":"visitor",
-            "book_num":"1",
+            "book_index":"1",
             "type_num":"1",
             "type_name":"热血玄幻",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
@@ -83,11 +83,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/2.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"2",
+            "book_index":"2",
             "type_num":"1",
             "type_name":"热血玄幻",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
@@ -95,11 +95,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/3.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"3",
+            "book_index":"3",
             "type_num":"1",
             "type_name":"热血玄幻",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
@@ -107,11 +107,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/4.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"4",
+            "book_index":"4",
             "type_num":"1",
             "type_name":"热血玄幻",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
@@ -119,12 +119,12 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/5.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         
         {
             "user":"visitor",
-            "book_num":"0",
+            "book_index":"0",
             "type_num":"2",
             "type_name":"缥缈修仙",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
@@ -132,11 +132,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/1.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"1",
+            "book_index":"1",
             "type_num":"2",
             "type_name":"缥缈修仙",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
@@ -144,11 +144,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/2.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"2",
+            "book_index":"2",
             "type_num":"2",
             "type_name":"缥缈修仙",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
@@ -156,11 +156,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/3.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"0"
+        },
         {
             "user":"visitor",
-            "book_num":"3",
+            "book_index":"3",
             "type_num":"2",
             "type_name":"缥缈修仙",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
@@ -168,11 +168,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/4.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"4",
+            "book_index":"4",
             "type_num":"2",
             "type_name":"缥缈修仙",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
@@ -180,12 +180,12 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/5.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         
         {
             "user":"visitor",
-            "book_num":"0",
+            "book_index":"0",
             "type_num":"3",
             "type_name":"历史军事",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
@@ -193,11 +193,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/1.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"1",
+            "book_index":"1",
             "type_num":"3",
             "type_name":"历史军事",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
@@ -205,11 +205,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/2.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"2",
+            "book_index":"2",
             "type_num":"3",
             "type_name":"历史军事",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
@@ -217,11 +217,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/3.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"0"
+        },
         {
             "user":"visitor",
-            "book_num":"3",
+            "book_index":"3",
             "type_num":"3",
             "type_name":"历史军事",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
@@ -229,11 +229,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/4.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"0"
+        },
         {
             "user":"visitor",
-            "book_num":"4",
+            "book_index":"4",
             "type_num":"3",
             "type_name":"历史军事",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
@@ -241,12 +241,12 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/5.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         
         {
             "user":"visitor",
-            "book_num":"0",
+            "book_index":"0",
             "type_num":"4",
             "type_name":"现代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
@@ -254,11 +254,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/1.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"1",
+            "book_index":"1",
             "type_num":"4",
             "type_name":"现代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
@@ -266,11 +266,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/2.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"2",
+            "book_index":"2",
             "type_num":"4",
             "type_name":"现代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
@@ -278,11 +278,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/3.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"3",
+            "book_index":"3",
             "type_num":"4",
             "type_name":"现代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
@@ -290,11 +290,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/4.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"4",
+            "book_index":"4",
             "type_num":"4",
             "type_name":"现代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
@@ -302,12 +302,12 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/5.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         
         {
             "user":"visitor",
-            "book_num":"0",
+            "book_index":"0",
             "type_num":"5",
             "type_name":"古代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/古代言情/",
@@ -315,11 +315,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/1.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"1",
+            "book_index":"1",
             "type_num":"5",
             "type_name":"古代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
@@ -327,11 +327,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/2.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"2",
+            "book_index":"2",
             "type_num":"5",
             "type_name":"古代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/古代言情/",
@@ -339,11 +339,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/3.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"3",
+            "book_index":"3",
             "type_num":"5",
             "type_name":"古代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/古代言情/",
@@ -351,11 +351,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/4.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"4",
+            "book_index":"4",
             "type_num":"5",
             "type_name":"古代言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/古代言情/",
@@ -363,12 +363,12 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/5.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         
         {
             "user":"visitor",
-            "book_num":"0",
+            "book_index":"0",
             "type_num":"6",
             "type_name":"幻想言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
@@ -376,11 +376,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/1.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"1",
+            "book_index":"1",
             "type_num":"6",
             "type_name":"幻想言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
@@ -388,11 +388,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/2.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"2",
+            "book_index":"2",
             "type_num":"6",
             "type_name":"幻想言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
@@ -400,11 +400,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/3.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"3",
+            "book_index":"3",
             "type_num":"6",
             "type_name":"幻想言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
@@ -412,11 +412,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/4.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"0"
+        },
         {
             "user":"visitor",
-            "book_num":"4",
+            "book_index":"4",
             "type_num":"6",
             "type_name":"幻想言情",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
@@ -424,12 +424,12 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/5.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         
         {
             "user":"visitor",
-            "book_num":"0",
+            "book_index":"0",
             "type_num":"7",
             "type_name":"萌甜校园",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/萌甜校园/",
@@ -437,11 +437,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/1.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"0"
+        },
         {
             "user":"visitor",
-            "book_num":"1",
+            "book_index":"1",
             "type_num":"7",
             "type_name":"萌甜校园",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/萌甜校园/",
@@ -449,11 +449,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/2.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"2",
+            "book_index":"2",
             "type_num":"7",
             "type_name":"萌甜校园",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/萌甜校园/",
@@ -461,11 +461,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/3.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"3",
+            "book_index":"3",
             "type_num":"7",
             "type_name":"萌甜校园",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/萌甜校园/",
@@ -473,11 +473,11 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/4.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
-        }
+            "is_bookshelf":"1"
+        },
         {
             "user":"visitor",
-            "book_num":"4",
+            "book_index":"4",
             "type_num":"7",
             "type_name":"萌甜校园",
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/萌甜校园/",
@@ -485,7 +485,7 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/5.jpg",
             "book_des":"",
             "book_author":"",
-            "is_bookshelf":"",
+            "is_bookshelf":"1"
         }
         
     ]

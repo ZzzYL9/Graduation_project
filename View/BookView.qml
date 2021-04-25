@@ -15,28 +15,52 @@ StackView{
 
 
     // Settings是全局变量，这里读取的，在分类中也会显示
-    function setmodel(){
-        for(var i=0;i<Settings.bookShelf.booksCount;i++){
-            if(i==0){
-                Settings.bookShelf.booksAt(i).isbookshelf=true
-            }else if(i==1){
-                Settings.bookShelf.booksAt(i).isbookshelf=true
-            }else if(i==2){
-                Settings.bookShelf.booksAt(i).isbookshelf=true
-            }
-        }
-        for(var i=0;i<Settings.bookShelf.booksCount;i++){
-            if(Settings.bookShelf.booksAt(i).isbookshelf==true){
-//                console.log(Settings.bookShelf.booksAt(i).index)
-//                console.log(Settings.bookShelf.booksAt(i).bookName)
-//                console.log(Settings.bookShelf.booksAt(i).image)
-                var data = {"bookindex":Settings.bookShelf.booksAt(i).index,"bookname":Settings.bookShelf.booksAt(i).bookName,"image":Settings.bookShelf.booksAt(i).image};
+//    function setmodel(){
+//        for(var i=0;i<Settings.bookShelf.booksCount;i++){
+//            if(i==0){
+//                Settings.bookShelf.booksAt(i).isbookshelf=true
+//            }else if(i==1){
+//                Settings.bookShelf.booksAt(i).isbookshelf=true
+//            }else if(i==2){
+//                Settings.bookShelf.booksAt(i).isbookshelf=true
+//            }
+//        }
+//        for(var i=0;i<Settings.bookShelf.booksCount;i++){
+//            if(Settings.bookShelf.booksAt(i).isbookshelf==true){
+////                console.log(Settings.bookShelf.booksAt(i).index)
+////                console.log(Settings.bookShelf.booksAt(i).bookName)
+////                console.log(Settings.bookShelf.booksAt(i).image)
+//                var data = {"bookindex":Settings.bookShelf.booksAt(i).index,"bookname":Settings.bookShelf.booksAt(i).bookName,"image":Settings.bookShelf.booksAt(i).image};
+//                listmodel.append(data)
+//            }
+
+//        }
+
+//    }
+
+    function setmodel_1(){
+        fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/books.json")
+        var json = JSON.parse(fileio.text)
+//            bookinfo.clear()
+        var count = json.BOOKS.length
+        for (var i in json.BOOKS) {
+            var content = json.BOOKS[ i ];
+            //如果该书籍在书架中，则将书籍的index、图片路径、书籍名称读取出来
+            if(parseInt(content.is_bookshelf) === 0){
+
+                var data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
                 listmodel.append(data)
             }
 
+//            content.book_num = parseInt(content.book_num);
+//            content.type_num = parseInt(content.type_num);
+//            content.is_bookshelf = parseInt(content.is_bookshelf);
+
+//                bookinfo.append( content );
         }
 
     }
+
     ListModel{
         id:listmodel
     }
@@ -47,8 +71,10 @@ StackView{
         running: true;
         repeat: false
         onTriggered: {
-            Settings.bookShelf.loadDir("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/")
-            setmodel()
+
+//            Settings.bookShelf.loadDir("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/")
+//            setmodel()
+            setmodel_1()
         }
     }
 
@@ -120,8 +146,10 @@ StackView{
                 width: bookshelfview.cellWidth;
                 height: bookshelfview.cellHeight;
                 onOpenSource: {
+                    console.log(book_path+bookname)
+                    Settings.bookShelf.loadBook(book_path+bookname,bookname,bookindex)
 
-                    Settings.bookShelf.currentBook=bookindex-2;
+                    Settings.bookShelf.currentBook=bookindex;
                     console.log(bookindex);
                     Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart=0
                     console.log("start")
