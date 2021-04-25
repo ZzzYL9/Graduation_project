@@ -30,33 +30,68 @@ StackView {
         }
     }
 
-    function setmodel_1(){
-        for(var i=0;i<3;i++){
-//        for(var i=0;i<Settings.bookShelf.booksCount;i++){
-            if(i==0){
-                Settings.bookShelf.booksAt(i).isbookshelf=true
-            }/*else if(i==1){
-                Settings.bookShelf.booksAt(i).isbookshelf=true
-            }else if(i==2){
-                Settings.bookShelf.booksAt(i).isbookshelf=true
-            }*/
-        }
-        for(var i=0;i<3;i++){
-            if(Settings.bookShelf.booksAt(i).isbookshelf==true){
-//                console.log(Settings.bookShelf.booksAt(i).index)
-                console.log(Settings.bookShelf.booksAt(i).bookName)
-//                console.log(Settings.bookShelf.booksAt(i).image)
-                var data = {"bookindex":Settings.bookShelf.booksAt(i).index,"bookname":Settings.bookShelf.booksAt(i).bookName,"image":Settings.bookShelf.booksAt(i).image};
-                listmodel_1.append(data)
-            }
-
-        }
-
+    function getRandomNum(Min,Max){
+        var Range = Max - Min;
+        var rand = Math.random();
+        return(Min + Math.round(rand*Range));
     }
+
+    //利用生成随机数，随机显示书籍
+    function setmodel_JX(){
+        fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/books.json")
+        var json = JSON.parse(fileio.text);
+//            bookinfo.clear()
+        var count = json.BOOKS.length;
+        var num = 0;
+
+        var content = json.BOOKS[ getRandomNum(0,5) ];
+        var data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        listmodel_1.append(data_1);
+
+        content = json.BOOKS[ getRandomNum(6,10) ];
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        listmodel_2.append(data_1);
+
+        content = json.BOOKS[ getRandomNum(11,15) ];
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        listmodel_3.append(data_1);
+
+        content = json.BOOKS[ getRandomNum(16,20) ];
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        listmodel_1.append(data_1);
+
+        content = json.BOOKS[ getRandomNum(21,25) ];
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        listmodel_2.append(data_1);
+
+        content = json.BOOKS[ getRandomNum(26,30) ];
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        listmodel_3.append(data_1);
+
+        content = json.BOOKS[ getRandomNum(31,35) ];
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        listmodel_1.append(data_1);
+
+        content = json.BOOKS[ getRandomNum(36,39) ];
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        listmodel_2.append(data_1);
+
+        content = json.BOOKS[ getRandomNum(0,39) ];
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        listmodel_3.append(data_1);
+    }
+
+
 
 
     ListModel{
         id:listmodel_1
+    }
+    ListModel{
+        id:listmodel_2
+    }
+    ListModel{
+        id:listmodel_3
     }
 
     Timer{
@@ -64,7 +99,7 @@ StackView {
         running: true;
         repeat: false
         onTriggered: {
-            setmodel_1()
+            setmodel_JX()
         }
     }
 
@@ -212,7 +247,7 @@ StackView {
                     cellHeight: 1/4*(rootwindow.height-basebar.height);
 
                     //model: Settings.bookShelf.books;
-                    model:listmodel_1
+                    model:listmodel_2
                     delegate:
 
                         Book_ShelfItem{
@@ -279,7 +314,7 @@ StackView {
                     cellHeight: 1/4*(rootwindow.height-basebar.height);
 
                     //model: Settings.bookShelf.books;
-                    model:listmodel_1
+                    model:listmodel_3
                     delegate:
 
                         Book_ShelfItem{

@@ -215,7 +215,7 @@ StackView {
     }
     Component{
         id:textbook
-        SortView{
+        Woman_Sort{
             sorttitle: qsTr("女生")
         }
     }

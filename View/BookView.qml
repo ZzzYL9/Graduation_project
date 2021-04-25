@@ -51,12 +51,6 @@ StackView{
                 var data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
                 listmodel.append(data)
             }
-
-//            content.book_num = parseInt(content.book_num);
-//            content.type_num = parseInt(content.type_num);
-//            content.is_bookshelf = parseInt(content.is_bookshelf);
-
-//                bookinfo.append( content );
         }
 
     }

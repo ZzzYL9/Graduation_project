@@ -29,29 +29,28 @@ StackView {
     }
 
     function setmodel_2(){
-        for(var i=0;i<Settings.bookShelf.booksCount;i++){
-            if(i==1){
-                Settings.bookShelf.booksAt(i).isbookshelf=true
-            }else if(i==2){
-                Settings.bookShelf.booksAt(i).isbookshelf=true
-            }/*else if(i==2){
-                Settings.bookShelf.booksAt(i).isbookshelf=true
-            }*/
-        }
-        for(var i=0;i<Settings.bookShelf.booksCount;i++){
-            if(Settings.bookShelf.booksAt(i).isbookshelf==true){
-//                console.log(Settings.bookShelf.booksAt(i).index)
-                console.log(Settings.bookShelf.booksAt(i).bookName)
-//                console.log(Settings.bookShelf.booksAt(i).image)
-                var data2 = {"bookindex":Settings.bookShelf.booksAt(i).index,"bookname":Settings.bookShelf.booksAt(i).bookName,"image":Settings.bookShelf.booksAt(i).image, "bookdes":Settings.bookShelf.booksAt(i).bookDes };
-                listmodel_2.append(data2)
-//                listmodel_3.append(data3)
-//                listmodel_4.append(data4)
-//                listmodel_5.append(data5)
+        fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/books.json")
+        var json = JSON.parse(fileio.text)
+//            bookinfo.clear()
+        var count = json.BOOKS.length
+        var data
+        for (var i in json.BOOKS) {
+            var content = json.BOOKS[ i ];
+            //如果type_num = 0:畅爽都市，1：热血玄幻 2：缥缈修仙，3：历史军事
+            if(parseInt(content.type_num) === 0){
+                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path, "book_author":content.book_author, "book_des":String(content.book_des) };
+                listmodel_2.append(data)
+            }else if(parseInt(content.type_num) === 1){
+                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path, "book_author":content.book_author, "book_des":String(content.book_des) };
+                listmodel_3.append(data)
+            }else if(parseInt(content.type_num) === 2){
+                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path, "book_author":content.book_author, "book_des":String(content.book_des) };
+                listmodel_4.append(data)
+            }else if(parseInt(content.type_num) === 3){
+                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path, "book_author":content.book_author, "book_des":String(content.book_des) };
+                listmodel_5.append(data)
             }
-
         }
-
     }
 
     ListModel{//畅爽都市
@@ -244,14 +243,7 @@ StackView {
                                 height: bookshelfview_1.height*1/6;
                                 onOpenSource: {
 
-        //                                    Settings.bookShelf.currentBook=bookindex;
-        //                                    Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart=0
-        //                                    console.log("start")
-        //                                    console.log(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).chartAt(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart).str)
-        //                                    console.log("end")
 
-        //                                    bookstack.push(readview)
-                //                        readview.visible=true;
                                     //顶、底部导航隐藏
                 //                    topBars.visible=false;
                                     basebar.visible=false;
@@ -283,7 +275,7 @@ StackView {
         //                    cellHeight: 1/4*(rootwindow.height-basebar.height);
 
                             //model: Settings.bookShelf.books;
-                            model:listmodel_2
+                            model:listmodel_3
                             delegate:
 
                                 Sort_ShelfItem{
@@ -291,14 +283,6 @@ StackView {
                                 height: bookshelfview_2.height*1/6;
                                 onOpenSource: {
 
-        //                                    Settings.bookShelf.currentBook=bookindex;
-        //                                    Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart=0
-        //                                    console.log("start")
-        //                                    console.log(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).chartAt(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart).str)
-        //                                    console.log("end")
-
-        //                                    bookstack.push(readview)
-                //                        readview.visible=true;
                                     //顶、底部导航隐藏
                 //                    topBars.visible=false;
                                     basebar.visible=false;
@@ -319,60 +303,32 @@ StackView {
                         height: content.height-sort.height-8
 
                         ListView{
-                            anchors.fill: parent
-                            anchors.leftMargin: 20
-                            spacing:10
-                            model:ListBookModel{}
+                            id:bookshelfview_2;
+//                            anchors.fill: parent;
+//                            anchors.left: parent.left
+//                            anchors.leftMargin: 10
+                            width: content.width;
+                            height: content.height;
+        //                    cellWidth: 1/3*rootwindow.width;
+        //                    cellHeight: 1/4*(rootwindow.height-basebar.height);
 
-                            delegate: Component{
+                            //model: Settings.bookShelf.books;
+                            model:listmodel_4
+                            delegate:
 
+                                Sort_ShelfItem{
+                                width: bookshelfview_2.width*1/4;
+                                height: bookshelfview_2.height*1/6;
+                                onOpenSource: {
 
-                                Column{
-                                    Row{
-                                        id:controw
-                                        spacing: 10
-                                        Rectangle{
-                                           width:imgsize
-                                           height:imgsize
-                                           MouseArea{
-                                               anchors.fill: parent
+                                    //顶、底部导航隐藏
+                //                    topBars.visible=false;
+                                    basebar.visible=false;
+                                    //界面高度增加
+                                    swipeview.height=rootwindow.height;
+                                    //禁止滑动
+                                    swipeview.interactive=false;
 
-                                               onClicked: {
-                                                   console.log("向服务器发送书籍信息并获取书籍文件")
-                                                   console.log("进入阅读界面")
-                                               }
-                                           }
-
-                                           Image{
-                                               id:_bookimage
-                                               height: parent.width
-                                               width: parent.height
-                                               source: bookimage
-                                           }
-                                        }
-                                        Column{
-                                           Text {//书籍名字
-                                               id: _bookname
-                                               text: bookname
-                                               font.bold: true
-                                               font.pixelSize: 15
-                                           }
-                                           Text {//书籍简介
-                                               id: _bookdesc
-                                               width:bookdesc_wid
-                                               height: bookdesc_hei
-                                               text: bookdesc
-    //                                           font.bold: true
-                                               font.pixelSize: 14
-                                               wrapMode: Text.WordWrap
-                                           }
-                                       }
-                                    }
-                                    Rectangle{//模拟线段
-                                        width:rootwindow.width-40 //长
-                                        height:4  //高
-                                        color:"#e6e6e6" //颜色
-                                    }
                                 }
                             }
                         }
@@ -385,60 +341,32 @@ StackView {
                         height: content.height-sort.height-8
 
                         ListView{
-                            anchors.fill: parent
-                            anchors.leftMargin: 20
-                            spacing:10
-                            model:ListBookModel{}
+                            id:bookshelfview_2;
+//                            anchors.fill: parent;
+//                            anchors.left: parent.left
+//                            anchors.leftMargin: 10
+                            width: content.width;
+                            height: content.height;
+        //                    cellWidth: 1/3*rootwindow.width;
+        //                    cellHeight: 1/4*(rootwindow.height-basebar.height);
 
-                            delegate: Component{
+                            //model: Settings.bookShelf.books;
+                            model:listmodel_5
+                            delegate:
 
+                                Sort_ShelfItem{
+                                width: bookshelfview_2.width*1/4;
+                                height: bookshelfview_2.height*1/6;
+                                onOpenSource: {
 
-                                Column{
-                                    Row{
-                                        id:controw
-                                        spacing: 10
-                                        Rectangle{
-                                           width:imgsize
-                                           height:imgsize
-                                           MouseArea{
-                                               anchors.fill: parent
+                                    //顶、底部导航隐藏
+                //                    topBars.visible=false;
+                                    basebar.visible=false;
+                                    //界面高度增加
+                                    swipeview.height=rootwindow.height;
+                                    //禁止滑动
+                                    swipeview.interactive=false;
 
-                                               onClicked: {
-                                                   console.log("向服务器发送书籍信息并获取书籍文件")
-                                                   console.log("进入阅读界面")
-                                               }
-                                           }
-
-                                           Image{
-                                               id:_bookimage
-                                               height: parent.width
-                                               width: parent.height
-                                               source: bookimage
-                                           }
-                                        }
-                                        Column{
-                                           Text {//书籍名字
-                                               id: _bookname
-                                               text: bookname
-                                               font.bold: true
-                                               font.pixelSize: 15
-                                           }
-                                           Text {//书籍简介
-                                               id: _bookdesc
-                                               width:bookdesc_wid
-                                               height: bookdesc_hei
-                                               text: bookdesc
-    //                                           font.bold: true
-                                               font.pixelSize: 14
-                                               wrapMode: Text.WordWrap
-                                           }
-                                       }
-                                    }
-                                    Rectangle{//模拟线段
-                                        width:rootwindow.width-40 //长
-                                        height:4  //高
-                                        color:"#e6e6e6" //颜色
-                                    }
                                 }
                             }
                         }

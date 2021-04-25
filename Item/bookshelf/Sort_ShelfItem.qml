@@ -24,7 +24,7 @@ Rectangle{
             height: parent.height;
             anchors.fill:parent;
             anchors.margins: 1
-            source: "../../Images/books_image/Bookshelf_image/" + bookname + ".jpg"
+            source: image
         }
 
         Rectangle{
@@ -44,16 +44,30 @@ Rectangle{
         }
 
         Rectangle{
+            id:bookAuthorR
+//            color: "pink"
+            width: parent.width
+            height: 20
+            anchors.left: bookNameR.right
+            anchors.leftMargin: 80
+            Text {
+                id: author
+                text: "作者:"+book_author
+                font.pointSize: 8
+            }
+        }
+
+        Rectangle{
 //            color: "blue"
             anchors.top: bookNameR.bottom
             anchors.left: delegate.right
             anchors.leftMargin: 10
             anchors.topMargin: 8
-            width: 3.2*parent.width
+            width: 3.8*parent.width
             height: 7/8*parent.width
             Text {
                 id: des
-                text: bookdes
+                text: book_des
             }
         }
 
