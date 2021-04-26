@@ -92,42 +92,6 @@ void Read_View::loadDir(QString path)
     }
 }
 
-//void Read_View::Load_Book(QString path,QString name,int index)
-//{
-//    QDir Dir(path);
-//    if(!Dir.exists()){
-//        qDebug() << " error error path";
-//    }else {
-//        qDebug() << path;
-//    }
-
-//    QString temContent; //章节内容
-//    QString temName; //章节目录
-//    QString temDes; //小说简介
-//    Reader_Book *temBook=new Reader_Book;
-//    for (unsigned i=2;i<Dir.count()-1;i++) {
-//          temName=Dir.absolutePath()+"/"+Dir[i]; //读取章节
-//          if(i==0){
-//            qDebug() << temName << "0000";
-//            temDes = getContent(temName);
-//            qDebug() << temDes;
-//            temBook->setBookDes(temDes);
-//          }else{
-//            qDebug() << temName << "zyl";
-//            // 问题？读取时只从文件名开头数字最小的开始读取，如开头为20和100，会先读取100
-//            Book_chapter *chapt=new Book_chapter(temName,Dir[i]); //把每本小说的所有章节的所在目录和章节名字一起放入chapt中
-//            temBook->appendChart(chapt);
-//          }
-//    }
-//    qDebug() << name << "zzzzz";
-//    temBook->setBookSource(path);
-//    temBook->setBookName(name);
-//    temBook->setindex(index);
-//    QString imageDir = Dir.absolutePath()+"/"+name+".jpg";
-//    qDebug() << imageDir << "imageeeeee";
-//    temBook->setimage(imageDir);
-//    Book_shelf.append(temBook);
-//}
 
 void Read_View::loadBook(QString path,QString name,int index)
 {

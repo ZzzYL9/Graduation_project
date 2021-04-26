@@ -62,6 +62,12 @@ void Book_settings::setback_Color(QString color)
     back_ColorChanged(color);
 }
 
+void Book_settings::setfont_Color(QString color)
+{
+    Theme_Setting.m_fontSet.setFontColor(color);
+    font_ColorChanged(color);
+}
+
 int Book_settings::font_Size() const
 {
     return Theme_Setting.m_fontSet.getFontSize();
@@ -77,11 +83,7 @@ QString Book_settings::font_Color() const
     return Theme_Setting.m_fontSet.getFontColor();
 }
 
-void Book_settings::setfont_Color(QString color)
-{
-    Theme_Setting.m_fontSet.setFontColor(color);
-    font_ColorChanged(color);
-}
+
 
 int Book_settings::theme() const
 {

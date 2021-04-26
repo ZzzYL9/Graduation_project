@@ -78,11 +78,15 @@ Page{
 
 
     Rectangle {
+//        color: "blue"
         id: loginForm
         width: loginPage.width*3/4
         height: loginPage.height/2
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.top: rectangle1.bottom
+//        anchors.margins: 40
+        anchors.centerIn: parent
+//        anchors.horizontalCenter: parent.horizontalCenter
+//        anchors.verticalCenter: parent.verticalCenter
 
         Text {
             y: 34
@@ -93,15 +97,21 @@ Page{
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
+
+
             Button {
+                id: login_Btn
                 text: qsTr("登录")
                 anchors.bottom: parent.bottom
-                anchors.bottomMargin: 40
+                anchors.bottomMargin: 30
+                anchors.left: parent.left
+                anchors.leftMargin: 50
+//                anchors.centerIn: parent
                 width: loginPage.width/4
                 height: 38.4
-                anchors.horizontalCenterOffset: 0
-                flat: false
-                anchors.horizontalCenter: parent.horizontalCenter
+//                anchors.horizontalCenterOffset: 0
+//                flat: false
+//                anchors.horizontalCenter: parent.horizontalCenter
                 onClicked: {
                     //Get.down_load()
                     time=Qt.formatDateTime(new Date(), "yyyy-MM-dd  hh-mm-ss  dddd")
@@ -160,6 +170,24 @@ Page{
                     }
                 }
             }
+
+
+            Button {
+                text: qsTr("注册")
+                anchors.left: login_Btn.right
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 30
+                anchors.leftMargin: 40
+                width: loginPage.width/4
+                height: 38.4
+//                anchors.horizontalCenterOffset: 0
+//                flat: false
+//                anchors.horizontalCenter: parent.horizontalCenter
+                onClicked: {
+
+                }
+            }
+
 
 
             ListModel{
