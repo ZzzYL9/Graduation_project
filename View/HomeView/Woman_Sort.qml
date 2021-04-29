@@ -11,7 +11,7 @@ import "../../Item/homepage"
 import "../../Item/bookshelf"
 import "../../"
 
-StackView {
+Rectangle {
     property var bookdesc_wid: 5/8*rootwindow.width
     property var bookdesc_hei: imgsize.height
     property var imgsize: 1/4*rootwindow.width
@@ -38,16 +38,16 @@ StackView {
             var content = json.BOOKS[ i ];
             //如果type_num = 0:畅爽都市，1：热血玄幻 2：缥缈修仙，3：历史军事
             if(parseInt(content.type_num) === 4){
-                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path, "book_author":content.book_author, "book_des":String(content.book_des) };
+                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
                 listmodel_2.append(data)
             }else if(parseInt(content.type_num) === 5){
-                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path, "book_author":content.book_author, "book_des":String(content.book_des)};
+                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
                 listmodel_3.append(data)
             }else if(parseInt(content.type_num) === 6){
-                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path, "book_author":content.book_author, "book_des":String(content.book_des) };
+                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
                 listmodel_4.append(data)
             }else if(parseInt(content.type_num) === 7){
-                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path, "book_author":content.book_author, "book_des":String(content.book_des) };
+                data = {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
                 listmodel_5.append(data)
             }
         }
@@ -121,10 +121,8 @@ StackView {
 
         Rectangle{
             id:content
-//            anchors.top: sort_tbar.bottom
             width:rootwindow.width
             height: rootwindow.height-sort_tbar.height
-//            color: "red"
 
             Column{
                 Rectangle{
@@ -226,15 +224,8 @@ StackView {
 
                         ListView{
                             id:bookshelfview_1;
-//                            anchors.fill: parent;
-//                            anchors.left: parent.left
-//                            anchors.leftMargin: 10
                             width: content.width;
                             height: content.height;
-        //                    cellWidth: 1/3*rootwindow.width;
-        //                    cellHeight: 1/4*(rootwindow.height-basebar.height);
-
-                            //model: Settings.bookShelf.books;
                             model:listmodel_2
                             delegate:
 
@@ -242,7 +233,9 @@ StackView {
                                 width: bookshelfview_1.width*1/4;
                                 height: bookshelfview_1.height*1/6;
                                 onOpenSource: {
-
+                                    load_page(0,bookname,book_author,book_type,book_des,image,book_path,bookindex)
+                                    console.log(bookindex)
+                                    console.log(bookname)
 
                                     //顶、底部导航隐藏
                 //                    topBars.visible=false;
@@ -266,15 +259,9 @@ StackView {
 
                         ListView{
                             id:bookshelfview_2;
-//                            anchors.fill: parent;
-//                            anchors.left: parent.left
-//                            anchors.leftMargin: 10
+
                             width: content.width;
                             height: content.height;
-        //                    cellWidth: 1/3*rootwindow.width;
-        //                    cellHeight: 1/4*(rootwindow.height-basebar.height);
-
-                            //model: Settings.bookShelf.books;
                             model:listmodel_3
                             delegate:
 
@@ -282,7 +269,9 @@ StackView {
                                 width: bookshelfview_2.width*1/4;
                                 height: bookshelfview_2.height*1/6;
                                 onOpenSource: {
-
+                                    load_page(0,bookname,book_author,book_type,book_des,image,book_path,bookindex)
+                                    console.log(bookindex)
+                                    console.log(bookname)
                                     //顶、底部导航隐藏
                 //                    topBars.visible=false;
                                     basebar.visible=false;
@@ -304,15 +293,8 @@ StackView {
 
                         ListView{
                             id:bookshelfview_2;
-//                            anchors.fill: parent;
-//                            anchors.left: parent.left
-//                            anchors.leftMargin: 10
                             width: content.width;
                             height: content.height;
-        //                    cellWidth: 1/3*rootwindow.width;
-        //                    cellHeight: 1/4*(rootwindow.height-basebar.height);
-
-                            //model: Settings.bookShelf.books;
                             model:listmodel_4
                             delegate:
 
@@ -320,7 +302,9 @@ StackView {
                                 width: bookshelfview_2.width*1/4;
                                 height: bookshelfview_2.height*1/6;
                                 onOpenSource: {
-
+                                    load_page(0,bookname,book_author,book_type,book_des,image,book_path,bookindex)
+                                    console.log(bookindex)
+                                    console.log(bookname)
                                     //顶、底部导航隐藏
                 //                    topBars.visible=false;
                                     basebar.visible=false;
@@ -342,15 +326,8 @@ StackView {
 
                         ListView{
                             id:bookshelfview_2;
-//                            anchors.fill: parent;
-//                            anchors.left: parent.left
-//                            anchors.leftMargin: 10
                             width: content.width;
                             height: content.height;
-        //                    cellWidth: 1/3*rootwindow.width;
-        //                    cellHeight: 1/4*(rootwindow.height-basebar.height);
-
-                            //model: Settings.bookShelf.books;
                             model:listmodel_5
                             delegate:
 
@@ -358,7 +335,9 @@ StackView {
                                 width: bookshelfview_2.width*1/4;
                                 height: bookshelfview_2.height*1/6;
                                 onOpenSource: {
-
+                                    load_page(0,bookname,book_author,book_type,book_des,image,book_path,bookindex)
+                                    console.log(bookindex)
+                                    console.log(bookname)
                                     //顶、底部导航隐藏
                 //                    topBars.visible=false;
                                     basebar.visible=false;
@@ -373,6 +352,19 @@ StackView {
                     }
                 }
             }
+        }
+    }
+    Component{
+        id:book_info
+        Book_Info{
+
+        }
+    }
+    function load_page(page,name,author,type,des,image,book_path,book_index){
+        switch(page){
+        case 0:
+            homeview.push(book_info,{book_name:name,book_author:author,book_type:type,book_des:des,img_path: image,book_path:book_path,book_index:book_index});
+            break;
         }
     }
 }

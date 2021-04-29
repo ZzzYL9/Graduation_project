@@ -606,19 +606,21 @@ Rectangle{
                             //当点击返回时，顶底部导航栏显示，swipeview滑动界面减去导航栏，并且swipeview可以滑动
                             Settings.bookShelf.clearBooks()
                             if(type==0){
-                               bookstack.clear()
+                                bookstack.clear()
+                                topBars.visible=true;
+                                basebar.visible=true;
+                                //swipeview.height=rootwindow.height - basebar.height;
+                                swipeview.interactive=true;
                                //删除读取的内容----------------------
-
+                            }else if(type==1){
+                               homeview.pop()
                             }else{
                                mynotes.clear();
                             }
 
 
 
-                            topBars.visible=true;
-                            basebar.visible=true;
-                            //swipeview.height=rootwindow.height - basebar.height;
-                            swipeview.interactive=true;
+
                         }
                     }
                 }

@@ -2,9 +2,6 @@ import QtQuick 2.0
 import QtQuick.Controls 2.1
 import QtQuick.Layouts 1.3
 import QtQuick.Window 2.12
-import QtQuick 2.0
-import QtQuick.Controls 1.4
-import QtQuick.Layouts 1.2
 import QtQuick.Controls.Styles 1.4
 import "../../common"
 import "../../Item/bookshelf"
@@ -12,7 +9,8 @@ import "../../"
 import "../../View/readview"
 import "../../Item/homepage"
 
-StackView {
+Rectangle {
+    id:jx_page
     property var bookdesc_wid: 5/8*rootwindow.width
     property var bookdesc_hei: imgsize.height
     property var imgsize: 1/4*rootwindow.width
@@ -45,39 +43,39 @@ StackView {
         var num = 0;
 
         var content = json.BOOKS[ getRandomNum(0,5) ];
-        var data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        var data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_1.append(data_1);
 
         content = json.BOOKS[ getRandomNum(6,10) ];
-        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_2.append(data_1);
 
         content = json.BOOKS[ getRandomNum(11,15) ];
-        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_3.append(data_1);
 
         content = json.BOOKS[ getRandomNum(16,20) ];
-        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_1.append(data_1);
 
         content = json.BOOKS[ getRandomNum(21,25) ];
-        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_2.append(data_1);
 
         content = json.BOOKS[ getRandomNum(26,30) ];
-        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_3.append(data_1);
 
         content = json.BOOKS[ getRandomNum(31,35) ];
-        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_1.append(data_1);
 
         content = json.BOOKS[ getRandomNum(36,39) ];
-        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_2.append(data_1);
 
         content = json.BOOKS[ getRandomNum(0,39) ];
-        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path, "book_path":content.book_path};
+        data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_3.append(data_1);
     }
 
@@ -188,15 +186,9 @@ StackView {
                         width: bookshelfview_1.cellWidth;
                         height: bookshelfview_1.cellHeight;
                         onOpenSource: {
-
-//                                    Settings.bookShelf.currentBook=bookindex;
-//                                    Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart=0
-//                                    console.log("start")
-//                                    console.log(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).chartAt(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart).str)
-//                                    console.log("end")
-
-//                                    bookstack.push(readview)
-        //                        readview.visible=true;
+                            load_page(0,bookname,book_author,book_type,book_des,image,book_path,bookindex)
+                            console.log(bookindex)
+                            console.log(bookname)
                             //顶、底部导航隐藏
         //                    topBars.visible=false;
                             basebar.visible=false;
@@ -254,15 +246,10 @@ StackView {
                         width: bookshelfview_2.cellWidth;
                         height: bookshelfview_2.cellHeight;
                         onOpenSource: {
+                            load_page(0,bookname,book_author,book_type,book_des,image,book_path,bookindex)
+                            console.log(bookindex)
+                            console.log(bookname)
 
-//                                    Settings.bookShelf.currentBook=bookindex;
-//                                    Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart=0
-//                                    console.log("start")
-//                                    console.log(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).chartAt(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart).str)
-//                                    console.log("end")
-
-//                                    bookstack.push(readview)
-        //                        readview.visible=true;
                             //顶、底部导航隐藏
         //                    topBars.visible=false;
                             basebar.visible=false;
@@ -321,15 +308,10 @@ StackView {
                         width: bookshelfview_3.cellWidth;
                         height: bookshelfview_3.cellHeight;
                         onOpenSource: {
+                            load_page(0,bookname,book_author,book_type,book_des,image,book_path,bookindex)
+                            console.log(bookindex)
+                            console.log(bookname)
 
-//                                    Settings.bookShelf.currentBook=bookindex;
-//                                    Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart=0
-//                                    console.log("start")
-//                                    console.log(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).chartAt(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart).str)
-//                                    console.log("end")
-
-//                                    bookstack.push(readview)
-        //                        readview.visible=true;
                             //顶、底部导航隐藏
         //                    topBars.visible=false;
                             basebar.visible=false;
@@ -342,8 +324,23 @@ StackView {
                     }
                 }
             }
+        }
+    }
 
 
+    Component{
+        id:book_info
+        Book_Info{
+            width: rootwindow.width
+            height: rootwindow.height
+            z:2
+        }
+    }
+    function load_page(page,name,author,type,des,image,book_path,book_index){
+        switch(page){
+        case 0:
+            homeview.push(book_info,{book_name:name,book_author:author,book_type:type,book_des:des,img_path: image,book_path:book_path,book_index:book_index});
+            break;
         }
     }
 }

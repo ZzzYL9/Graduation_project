@@ -1,0 +1,12 @@
+ { 
+    "USER": [
+        {
+            "user_name":"",
+            "user_psw":"",
+            "user_shelf_path":"",
+            "user_read_history":"",
+            "user_note":"",
+            "user_info":""
+        }
+    ]
+}

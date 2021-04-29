@@ -15,28 +15,6 @@ StackView{
 
 
     // Settings是全局变量，这里读取的，在分类中也会显示
-//    function setmodel(){
-//        for(var i=0;i<Settings.bookShelf.booksCount;i++){
-//            if(i==0){
-//                Settings.bookShelf.booksAt(i).isbookshelf=true
-//            }else if(i==1){
-//                Settings.bookShelf.booksAt(i).isbookshelf=true
-//            }else if(i==2){
-//                Settings.bookShelf.booksAt(i).isbookshelf=true
-//            }
-//        }
-//        for(var i=0;i<Settings.bookShelf.booksCount;i++){
-//            if(Settings.bookShelf.booksAt(i).isbookshelf==true){
-////                console.log(Settings.bookShelf.booksAt(i).index)
-////                console.log(Settings.bookShelf.booksAt(i).bookName)
-////                console.log(Settings.bookShelf.booksAt(i).image)
-//                var data = {"bookindex":Settings.bookShelf.booksAt(i).index,"bookname":Settings.bookShelf.booksAt(i).bookName,"image":Settings.bookShelf.booksAt(i).image};
-//                listmodel.append(data)
-//            }
-
-//        }
-
-//    }
 
     function setmodel_1(){
         fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/books.json")
@@ -65,9 +43,6 @@ StackView{
         running: true;
         repeat: false
         onTriggered: {
-
-//            Settings.bookShelf.loadDir("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/")
-//            setmodel()
             setmodel_1()
         }
     }
@@ -176,5 +151,5 @@ StackView{
                bookname:""
 
             }
-        }
+    }
 }

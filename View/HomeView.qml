@@ -265,5 +265,5 @@ StackView {
                 homeview.push(news);
                 break;
             }
-        }
+    }
 }
