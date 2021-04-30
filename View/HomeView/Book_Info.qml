@@ -24,7 +24,7 @@ Rectangle{
     property var book_type: ""
     property var book_des: ""
     property var book_path: ""
-    property int bookindex: 1
+    property int bookindex
 
     Column{
 
@@ -183,8 +183,9 @@ Rectangle{
                 }
 
                 onClicked: {
-                    console.log(book_path+book_name)
+                    console.log(book_path+book_name+bookindex)
                     Settings.bookShelf.loadBook(book_path+book_name,book_name,bookindex)
+                    console.log(book_path+book_name)
                     Settings.bookShelf.currentBook=bookindex;
                     Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart=0
                     homeview.push(readview,{type:1})

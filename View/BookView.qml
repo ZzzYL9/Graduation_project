@@ -115,7 +115,7 @@ StackView{
                 width: bookshelfview.cellWidth;
                 height: bookshelfview.cellHeight;
                 onOpenSource: {
-                    console.log(book_path+bookname)
+                    console.log(book_path+bookname+bookindex)
                     Settings.bookShelf.loadBook(book_path+bookname,bookname,bookindex)
 
                     Settings.bookShelf.currentBook=bookindex;

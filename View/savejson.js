@@ -22,6 +22,35 @@ function serialize(model) {
     console.log("res: " + res );
     return res;
 }
+
+function setuser(model){
+    var res = "{ \"USER\": [\n";
+
+    console.log("count: " + model.count);
+
+    for(var i = 0; i < model.count; ++i) {
+        res += "\n{\t";
+        var e = model.get(i);
+        res += "\"user_name\": \""   +　e.user_name + "\",\n\t";
+        res += "\"user_psw\": \""   +　e.user_psw + "\",\n\t";
+        res += "\"user_shelf_path\": \""   +　e.user_shelf_path + "\",\n\t";
+        res += "\"user_read_history\": \"" + e.user_read_history + "\",\n\t";
+        res += "\"user_note\": \"" + e.user_note + "\",\n\t";
+        res += "\"user_info\": \"" + e.user_info + "\"\n\t";
+        //The last one should not have the ending ","
+        if ( i === model.count -1)
+            res += "\n}";
+        else
+            res += "\n},";
+    }
+
+    res += "\n]\n}";
+
+    console.log("res: " + res );
+    return res;
+    
+}
+
 function setnote(model) {
     var res = "{ \"NOTE\": [\n";
 

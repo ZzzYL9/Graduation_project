@@ -224,15 +224,8 @@ Rectangle {
 
                         ListView{
                             id:bookshelfview_1;
-//                            anchors.fill: parent;
-//                            anchors.left: parent.left
-//                            anchors.leftMargin: 10
                             width: content.width;
                             height: content.height;
-        //                    cellWidth: 1/3*rootwindow.width;
-        //                    cellHeight: 1/4*(rootwindow.height-basebar.height);
-
-                            //model: Settings.bookShelf.books;
                             model:listmodel_2
                             delegate:
 
@@ -266,15 +259,8 @@ Rectangle {
 
                         ListView{
                             id:bookshelfview_2;
-//                            anchors.fill: parent;
-//                            anchors.left: parent.left
-//                            anchors.leftMargin: 10
                             width: content.width;
                             height: content.height;
-        //                    cellWidth: 1/3*rootwindow.width;
-        //                    cellHeight: 1/4*(rootwindow.height-basebar.height);
-
-                            //model: Settings.bookShelf.books;
                             model:listmodel_3
                             delegate:
 

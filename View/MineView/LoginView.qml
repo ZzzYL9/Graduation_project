@@ -3,7 +3,11 @@ import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.0
 import "../savejson.js" as Data
 import "../"
-
+import "../../common"
+import "../../Item/bookshelf"
+import "../../"
+import "../../View/readview"
+import "../../Item/homepage"
 
 
 Page{
@@ -16,6 +20,7 @@ Page{
     property bool password:false
     property bool zhuce: false
     property var userimage: ""
+    property var user_path: "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/users.json"
     //property bool userLoggedIn: true
     anchors.fill: parent
 
@@ -27,66 +32,31 @@ Page{
             wodepage.clear()
         }
     }
-    Rectangle {
-        id: rectangle1
-        height: 50
-        color: "#ffffff"
-        anchors.top: parent.top
-        anchors.topMargin: 0
-        anchors.left: parent.left
-        anchors.leftMargin: 0
-        anchors.right: parent.right
-        anchors.rightMargin: 0
-        MouseArea{
+    TopBars {
+        id:sort_tbar
+        height: 0.07*rootwindow.height
+        width: rootwindow.width
+        z:2
+        RowLayout {
             anchors.fill: parent
-        }
-        Text {
-            x: 295
-            y: 0
-            width: 50
-            height: 26
-            text: qsTr("登录")
-            anchors.horizontalCenter: parent.horizontalCenter
-            font.pixelSize: 12
-        }
-        Button {
-            flat: true
-            anchors.left: parent.left
-            anchors.leftMargin: 10
-            anchors.top: parent.top
-            anchors.topMargin: 10
-            height: 30
-            width: 30
-            Image {
-                anchors.fill: parent
-                source: "qrc:/Images/common/back1.png"
+            IconButton {
+                iconSource:"qrc:/Images/common/back.png"
+                onClicked:{
+                    swipeview.interactive=true
+                    basebar.visible=true
+                    wodepage.clear()
+                }
             }
-            onClicked:{
-
-                swipeview.interactive=true
-                basebar.visible=true
-                wodepage.clear()
-            }
-        }
-        Rectangle {
-            width: parent.width
-            height: 1
-            color: "#d2d2d2"
-            anchors.bottom:parent.bottom
         }
     }
-
 
     Rectangle {
 //        color: "blue"
         id: loginForm
         width: loginPage.width*3/4
         height: loginPage.height/2
-        anchors.top: rectangle1.bottom
-//        anchors.margins: 40
+        anchors.top: sort_tbar.bottom
         anchors.centerIn: parent
-//        anchors.horizontalCenter: parent.horizontalCenter
-//        anchors.verticalCenter: parent.verticalCenter
 
         Text {
             y: 34
@@ -97,103 +67,96 @@ Page{
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
+        Text {
+            id:message
+            y: 34
+            text: ""
+            font.pixelSize: loginPage.width*3/160+loginPage.height*3/200
+            anchors.top: txtPassword.bottom
+            anchors.topMargin: loginPage.height/100
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
 
+        //设置定时器，提示信息之后一段时间，提示消失
+        Timer{
+            id:mesT
+            interval: 1500;
+            running: false;
+            repeat: false
+            onTriggered: {
+                message.text=""
+            }
+        }
 
-            Button {
-                id: login_Btn
-                text: qsTr("登录")
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 30
-                anchors.left: parent.left
-                anchors.leftMargin: 50
+        Button {
+            id: login_Btn
+            text: qsTr("登录")
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 30
+            anchors.left: parent.left
+            anchors.leftMargin: 50
 //                anchors.centerIn: parent
-                width: loginPage.width/4
-                height: 38.4
-//                anchors.horizontalCenterOffset: 0
-//                flat: false
-//                anchors.horizontalCenter: parent.horizontalCenter
-                onClicked: {
-                    //Get.down_load()
-                    time=Qt.formatDateTime(new Date(), "yyyy-MM-dd  hh-mm-ss  dddd")
+            width: loginPage.width/4
+            height: 38.4
+            onClicked: {
 
-                    fileio.setSource("/root/read/qReader/View/data.json")
-                    var json = JSON.parse(fileio.text)
-                    models.clear()
-                    var count = json.TEXT.length
-                    if(txtUsername.text.toString()==""||txtPassword.text.toString()==""){
-                        reminder.text="请输入用户名和密码!"
-                        console.debug("Please enter the name and password!")
-                    }else{
-                        for (var i in json.TEXT) {
+                fileio.setSource(user_path)
+                var json = JSON.parse(fileio.text)
+                var count = json.USER.length
+                if(txtUsername.text.toString()==""||txtPassword.text.toString()==""){
+                    message.text="请输入用户名和密码!"
+                    mesT.running=true
+                    console.debug("Please enter the name and password!")
+                }else{
+                    for(var i in json.USER){
+                        if(json.USER[i].user_name===txtUsername.text.toString()&&json.USER[i].user_psw===txtPassword.text.toString()){
+                            //登录成功之后，读取该用户的书架json文件
+                            //如果没有的话就创建一个
 
-                            if(json.TEXT[ i ].name==txtUsername.text){
-                                hasname = true
-                                if(txtPassword.text==json.TEXT[ i ].password){
-                                    password = true
-                                }
-                            }
-                            fileio.setSource("/root/read/qReader/View/data.json")
-                            var t = json.TEXT[ i ];
-                            models.append( t );
+                            fileio.setSource(json.USER[i].user_shelf_path)
+//                            var user_shelf = JSON.parse(fileio.text)
+
+                            wodepage.onlogin=true
+                            wodepage.userimage="qrc:/Images/my/headimg.png"
+                            wodepage.username=txtUsername.text.toString()
+                            swipeview.interactive=true
+                            basebar.visible=true
+                            wodepage.clear()
+                        }else{
+                            message.text="用户名或密码错误!!"
+                            mesT.running=true
+                            console.debug("Please enter the name and password!")
                         }
                     }
-
-                    var data = {
-                        "name":txtUsername.text,
-                        "password":txtPassword.text,
-                        "time":time
-                    }
-
-                    if(hasname == true&&password == true){
-                        console.debug("Login Successful!")
-                        models.append(data)
-                    }else if((hasname == false)&&txtUsername.text.toString()!=""){
-
-                        zhuce=true
-                        console.debug("Creat login Successful!")
-                        models.append(data)
-                    }else if(hasname == true&&password == false){
-                        reminder.text="密码错误!"
-                        console.debug("Password error!")
-                    }
-
-                    var res = Data.serialize(models);
-                    fileio.text = res;
-
-                    if((hasname == true&&password == true)||zhuce==true){
-                        wodepage.onlogin=true
-                        wodepage.userimage="qrc:/Images/my/headimg.png"
-                        wodepage.username=txtUsername.text.toString()
-                        swipeview.interactive=true
-                        basebar.visible=true
-                        wodepage.clear()
-                    }
                 }
             }
+        }
 
 
-            Button {
-                text: qsTr("注册")
-                anchors.left: login_Btn.right
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 30
-                anchors.leftMargin: 40
-                width: loginPage.width/4
-                height: 38.4
-//                anchors.horizontalCenterOffset: 0
-//                flat: false
-//                anchors.horizontalCenter: parent.horizontalCenter
-                onClicked: {
-
-                }
+        Button {
+            text: qsTr("注册")
+            anchors.left: login_Btn.right
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 30
+            anchors.leftMargin: 40
+            width: loginPage.width/4
+            height: 38.4
+            onClicked: {
+                wodepage.push(regview)
             }
+        }
 
+        Component{
+            id:regview
 
+            RegisterView{
 
-            ListModel{
-                id:models
             }
+        }
 
+//        ListModel{
+//            id:models
+//        }
 
         Text {
             text: qsTr("帐号")
@@ -230,15 +193,7 @@ Page{
             anchors.right: parent.right
             anchors.rightMargin: loginPage.width/16
             echoMode: TextInput.Password
-        }
-        Button {
-                id:reminder
-                text: ""
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 0
-                anchors.horizontalCenterOffset: 0
-                flat: true
-                anchors.horizontalCenter: parent.horizontalCenter
+
         }
     }
 }

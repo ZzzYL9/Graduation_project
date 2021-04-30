@@ -20,9 +20,8 @@ void FileIO::read()
     QFile file(m_path.path());
     //QFile *file= new QFile;
     if(!file.exists()) {
-        //file.setFileName(m_path.fileName());
-
-        qWarning() << "Does not exits: " << m_path.toLocalFile();
+        file.open(QIODevice::WriteOnly);
+//        qWarning() << "Does not exits: " << m_path.toLocalFile();
         return;
     }
     if(file.open(QIODevice::ReadOnly | QIODevice::Text)) {
@@ -37,6 +36,7 @@ void FileIO::read()
 void FileIO::write()
 {
     if(m_source.isEmpty()) {
+        qDebug() << "路径不存在";
         return;
     }
 
@@ -90,31 +90,3 @@ void FileIO::setText(QString text)
     write();
     emit textChanged(text);
 }
-
-//QString FileIO::getFilePath(const QString filename) const
-//{
-//    QString APP_ID = getenv("APP_ID");
-//    QString app_pkgname = APP_ID.split('_')[0];
-//    QString path = getenv("XDG_DATA_HOME") +
-//            "/" + app_pkgname + "/" + filename;
-//    qDebug() << "path: " << path;
-//    return path;
-
-//    QString writablePath = QStandardPaths::writableLocation(QStandardPaths::DataLocation);
-//    qDebug() << "writablePath: " << writablePath;
-
-//    QString absolutePath = QDir(writablePath).absolutePath();
-//    qDebug() << "absoluePath: " << absolutePath;
-
-    // We need to make sure we have the path for storage
-//    QDir dir(absolutePath);
-//    if ( dir.mkdir(absolutePath) ) {
-//       qDebug() << "Successfully created the path!";
-//    }
-
-//    QString path = absolutePath + "/" + filename;
-
-//    qDebug() << "path: " << path;
-
-//    return path;
-//}

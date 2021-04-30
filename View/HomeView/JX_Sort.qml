@@ -42,7 +42,7 @@ Rectangle {
         var count = json.BOOKS.length;
         var num = 0;
 
-        var content = json.BOOKS[ getRandomNum(0,5) ];
+        var content = json.BOOKS[ getRandomNum(0,3) ];
         var data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_1.append(data_1);
 
@@ -74,7 +74,7 @@ Rectangle {
         data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_2.append(data_1);
 
-        content = json.BOOKS[ getRandomNum(0,39) ];
+        content = json.BOOKS[ getRandomNum(4,5) ];
         data_1 =   {"bookindex":parseInt(content.book_index),"bookname":content.book_name,"image":content.book_img_path,"book_author":content.book_author, "book_path":content.book_path,"book_type":content.type_name,"book_des":content.book_des,"book_path":content.book_path};
         listmodel_3.append(data_1);
     }
@@ -339,7 +339,7 @@ Rectangle {
     function load_page(page,name,author,type,des,image,book_path,book_index){
         switch(page){
         case 0:
-            homeview.push(book_info,{book_name:name,book_author:author,book_type:type,book_des:des,img_path: image,book_path:book_path,book_index:book_index});
+            homeview.push(book_info,{book_name:name,book_author:author,book_type:type,book_des:des,img_path: image,book_path:book_path,bookindex:book_index});
             break;
         }
     }
