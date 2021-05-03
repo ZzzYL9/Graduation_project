@@ -218,5 +218,8 @@
         <file>Images/books_image/Bookshelf_image/xdyq/5.jpg</file>
         <file>View/HomeView/Book_Info.qml</file>
         <file>View/MineView/RegisterView.qml</file>
+        <file>JSON/books.json</file>
+        <file>JSON/data.json</file>
+        <file>JSON/note.json</file>
     </qresource>
 </RCC>

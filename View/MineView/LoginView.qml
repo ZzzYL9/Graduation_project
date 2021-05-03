@@ -8,11 +8,12 @@ import "../../Item/bookshelf"
 import "../../"
 import "../../View/readview"
 import "../../Item/homepage"
-
+import "../HomeView"
 
 Page{
     id: loginPage
     title: "Login"
+
 
     signal loginSucceeded
     property string time: Qt.formatDateTime(new Date(), "yyyy-MM-dd  hh-mm-ss  dddd")
@@ -114,7 +115,15 @@ Page{
                             //如果没有的话就创建一个
 
                             fileio.setSource(json.USER[i].user_shelf_path)
-//                            var user_shelf = JSON.parse(fileio.text)
+                            var user_shelf = JSON.parse(fileio.text)
+
+                            //将登录者的名字设为全局可读
+                            Settings.user_name_global = txtUsername.text.toString()
+                            //将加入书架功能开启
+                            Settings.is_log=1
+                            Settings.flush=true
+                            Settings.btn_text="加入书架"
+                            Settings.btn_enable=true
 
                             wodepage.onlogin=true
                             wodepage.userimage="qrc:/Images/my/headimg.png"

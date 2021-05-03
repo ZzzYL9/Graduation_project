@@ -45,7 +45,6 @@ TabBar {
             }
 
             onClicked: {
-
             }
         }
     }

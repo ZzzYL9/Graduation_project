@@ -18,9 +18,19 @@ void FileIO::read()
     }
 
     QFile file(m_path.path());
+    QFile sourceFile("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/books.json");
     //QFile *file= new QFile;
     if(!file.exists()) {
         file.open(QIODevice::WriteOnly);
+        sourceFile.open(QIODevice::ReadOnly);
+
+        QTextStream in(&sourceFile);
+        QTextStream out(&file);
+        out<<in.readAll(); //用readAll()实现
+
+//        QTextStream stream(&file);
+//        stream<<QString("{\"BOOKS\": []}");
+        file.close();
 //        qWarning() << "Does not exits: " << m_path.toLocalFile();
         return;
     }
@@ -29,6 +39,7 @@ void FileIO::read()
         QTextStream stream(&file);
         m_text = stream.readAll();
         emit textChanged(m_text);
+        file.close();
         qDebug() << "Text has been successfully read!";
     }
 }

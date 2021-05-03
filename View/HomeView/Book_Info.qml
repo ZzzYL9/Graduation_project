@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.13
 import QtQuick.Controls 2.1
 import QtQuick.Layouts 1.3
 import QtQuick.Window 2.12
@@ -8,6 +8,8 @@ import "../../Item/bookshelf"
 import "../../"
 import "../../View/readview"
 import "../../Item/homepage"
+import "../MineView"
+import "../savejson.js" as Data
 
 Rectangle{
     id:book_infoR
@@ -25,6 +27,11 @@ Rectangle{
     property var book_des: ""
     property var book_path: ""
     property int bookindex
+
+    property alias shelf_btn_t: shelf_btn_t.text
+    property alias shelf_Btn: shelf_Btn
+
+    property var user_book_path: "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/"
 
     Column{
 
@@ -137,7 +144,22 @@ Rectangle{
 
                 Text {
                     id: b_des_text
-                    text: "  简介："+book_des
+//                    text: "  简介："+book_des
+                    color: "black"
+                    anchors.fill: parent
+                    verticalAlignment: TextInput.AlignVCenter
+                    horizontalAlignment: TextInput.AlignHCenter
+                    leftPadding: 5 //QtQuick 2.13 间隔
+                    rightPadding: 5
+                    text: qsTr("  简介："+book_des)
+    //                    lineHeight: Text.ProportionalHeight //设置行间距
+                    lineHeight: 0.7 //行间距比例 最大 1
+                    wrapMode: Text.WordWrap //换行
+                    //elide 省略模式 wrap 换行模式
+                    //contentWidth 手动设置字体显示的宽与高
+                    font.pixelSize: 15
+                    fontSizeMode: Text.Fit //固定 Text 显示大小->字体自动变化的模式选中还有几种看文档
+                    minimumPixelSize: 10 //设置自动变化最小字体大小
                     font.bold: true
                     font.pointSize: 11
                 }
@@ -163,11 +185,19 @@ Rectangle{
                 id:shelf_Btn
                 width: 1/2*parent.width
                 height: parent.height
+                enabled: Settings.btn_enable
                 Text{
-                    text: qsTr("加入书架")
+                    id:shelf_btn_t
+                    text: Settings.btn_text
                     font.bold: true
                     font.pointSize: 14
                     anchors.centerIn: parent
+                }
+
+                onClicked: {
+                    console.log(Settings.user_name_global)
+                    join_shelf()
+                    Settings.flush=true
                 }
             }
             Button{
@@ -193,6 +223,34 @@ Rectangle{
             }
         }
     }
+
+    function join_shelf(){
+        fileio.setSource(user_book_path+Settings.user_name_global+".json")
+        var json = JSON.parse(fileio.text)
+        var count = json.BOOKS.length
+        var content
+        for(var i in json.BOOKS){
+            var user_books_shelf
+            if(json.BOOKS[i].book_name===book_name){
+                content = json.BOOKS[i]
+                user_books_shelf={"user":content.user,"book_index":content.book_index,"type_num":content.type_num,"type_name":content.type_name,"book_path":content.book_path,"book_name":content.book_name,"book_img_path":content.book_img_path,"book_des":content.book_des,"book_author":content.book_author,"is_bookshelf":"0"}
+                user_books.append(user_books_shelf)
+            }else{
+                content = json.BOOKS[i]
+                user_books_shelf={"user":content.user,"book_index":content.book_index,"type_num":content.type_num,"type_name":content.type_name,"book_path":content.book_path,"book_name":content.book_name,"book_img_path":content.book_img_path,"book_des":content.book_des,"book_author":content.book_author,"is_bookshelf":content.is_bookshelf}
+                user_books.append(user_books_shelf)
+            }
+
+        }
+        fileio.setSource(user_book_path+Settings.user_name_global+".json")
+        var res = Data.setbooks(user_books)
+        fileio.text = res;
+    }
+
+    ListModel{
+        id:user_books
+    }
+
     Component {
             id: readview
             ReaderView {

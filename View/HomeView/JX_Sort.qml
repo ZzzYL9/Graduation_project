@@ -16,6 +16,7 @@ Rectangle {
     property var imgsize: 1/4*rootwindow.width
 
     property alias sorttitle: sorttitle.text
+//    property alias book_info_: book_info_
     anchors.fill: parent
 
     Keys.onPressed: {
@@ -331,15 +332,20 @@ Rectangle {
     Component{
         id:book_info
         Book_Info{
+            id:book_info_
             width: rootwindow.width
             height: rootwindow.height
+
             z:2
+
+
         }
     }
     function load_page(page,name,author,type,des,image,book_path,book_index){
         switch(page){
         case 0:
             homeview.push(book_info,{book_name:name,book_author:author,book_type:type,book_des:des,img_path: image,book_path:book_path,bookindex:book_index});
+
             break;
         }
     }

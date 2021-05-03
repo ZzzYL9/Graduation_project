@@ -51,6 +51,38 @@ function setuser(model){
     
 }
 
+function setbooks(model){
+    var res = "{ \"BOOKS\": [\n";
+
+    console.log("count: " + model.count);
+
+    for(var i = 0; i < model.count; ++i) {
+        res += "\n{\t";
+        var e = model.get(i);
+        res += "\"user\": \""   +　e.user + "\",\n\t";
+        res += "\"book_index\": \""   +　e.book_index + "\",\n\t";
+        res += "\"type_num\": \""   +　e.type_num + "\",\n\t";
+        res += "\"type_name\": \"" + e.type_name + "\",\n\t";
+        res += "\"book_path\": \"" + e.book_path + "\",\n\t";
+        res += "\"book_name\": \"" + e.book_name + "\",\n\t";
+        res += "\"book_img_path\": \"" + e.book_img_path + "\",\n\t";
+        res += "\"book_des\": \"" + e.book_des + "\",\n\t";
+        res += "\"book_author\": \"" + e.book_author + "\",\n\t";
+        res += "\"is_bookshelf\": \"" + e.is_bookshelf + "\"\n\t";
+        //The last one should not have the ending ","
+        if ( i === model.count -1)
+            res += "\n}";
+        else
+            res += "\n},";
+    }
+
+    res += "\n]\n}";
+
+    console.log("res: " + res );
+    return res;
+    
+}
+
 function setnote(model) {
     var res = "{ \"NOTE\": [\n";
 

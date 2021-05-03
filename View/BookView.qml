@@ -14,10 +14,15 @@ StackView{
     height:rootwindow.height
 
 
+    property alias book_timer: flush_shelf
     // Settings是全局变量，这里读取的，在分类中也会显示
 
-    function setmodel_1(){
-        fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/books.json")
+    function setmodel_shelf(){
+        listmodel.clear()
+
+        fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/"+Settings.user_name_global+".json")
+//        fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/aaa.json")
+        console.log("登录用户:"+Settings.user_name_global)
         var json = JSON.parse(fileio.text)
 //            bookinfo.clear()
         var count = json.BOOKS.length
@@ -39,11 +44,13 @@ StackView{
 
     //点击书城按钮后，经过一定时间后显示书籍
     Timer{
-        interval: 500;
-        running: true;
+        id:flush_shelf
+        interval: 500
+        running: Settings.flush
         repeat: false
         onTriggered: {
-            setmodel_1()
+            setmodel_shelf()
+            Settings.flush=false
         }
     }
 

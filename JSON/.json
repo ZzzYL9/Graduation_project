@@ -8,9 +8,9 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/",
             "book_name": "万界大起点",
             "book_img_path":"../../Images/books_image/Bookshelf_image/csds/1.jpg",
-            "book_des":"张烨：我本来的愿望就是当一个大明星，但是自从看了这本书，我的梦想变成了,破碎虚空，哎呀话说作者大大下次能不能让我抽一个ssr？",
+            "book_des":"张烨：我本来的愿望就是当一个大明星，\n但是自从看了这本书，我的梦想变成了,破碎虚空，\n哎呀话说作者大大下次能不能让我抽一个ssr？",
             "book_author":"魂澈",
-            "is_bookshelf":"1"
+            "is_bookshelf":"0"
         },
         {
             "user":"visitor",
@@ -32,9 +32,9 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/",
             "book_name": "虚拟穿越",
             "book_img_path":"../../Images/books_image/Bookshelf_image/csds/3.jpg",
-            "book_des":"如果偶然间，你得到一个可以让你自由穿越于游戏与现实世界的未来电脑，可以把游戏里的物品包括生命随意的带到现实，你会如何？",
+            "book_des":"如果偶然间，你得到一个可以让你自由\n穿越于游戏与现实世界的未来电脑，\n可以把游戏里的物品包括生命随意的带到现实，\n你会如何？",
             "book_author":"穿越荣誉勋章",
-            "is_bookshelf":"1"
+            "is_bookshelf":"0"
         },
         {
             "user":"visitor",
@@ -44,7 +44,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/",
             "book_name": "重生之仙妻凶猛",
             "book_img_path":"../../Images/books_image/Bookshelf_image/csds/4.jpg",
-            "book_des":" 一个是修真界药仙谷的天才药师，胸大腰细，霸道强势，用拳头说话的女汉子。 一个是现代被人收养的平凡少女，胸平个矮，懦弱可欺，忍气吞声的软妹纸。 ",
+            "book_des":" 一个是修真界药仙谷的天才药师，\n胸大腰细，霸道强势，用拳头说话的女汉子。\n 一个是现代被人收养的平凡少女，胸平个矮，\n懦弱可欺，忍气吞声的软妹纸。 ",
             "book_author":"第五轻狂",
             "is_bookshelf":"1"
         },
@@ -56,7 +56,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/畅爽都市/",
             "book_name": "重生之星空巨龟",
             "book_img_path":"../../Images/books_image/Bookshelf_image/csds/5.jpg",
-            "book_des":"本书无敌文，千年王八万年龟大家都听过，这是个无敌+长寿的主角，在宇宙中寻找各种星球，各类种族，偶尔漏下点小机缘，偶尔随手灰灰一片星域，偶尔隐藏在某个阴暗的角落默默注视一个个强者崛起。。",
+            "book_des":"本书无敌文，千年王八万年龟大家都听过，\n这是个无敌+长寿的主角，在宇宙中寻找各种星球，\n各类种族，偶尔漏下点小机缘，偶尔随手灰灰一片星域，\n偶尔隐藏在某个阴暗的角落默默注视一个个强者崛起。。",
             "book_author":"北北的的的",
             "is_bookshelf":"1"
         },
@@ -69,9 +69,9 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
             "book_name": "沧元图",
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/1.jpg",
-            "book_des":" 我叫孟川，今年十五岁，是东宁府 '镜湖道院'的当代大师兄。 ",
+            "book_des":" 我叫孟川，今年十五岁，\n是东宁府 '镜湖道院'的当代大师兄。 ",
             "book_author":"我吃西红柿 ",
-            "is_bookshelf":"1"
+            "is_bookshelf":"0"
         },
         {
             "user":"visitor",
@@ -81,7 +81,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
             "book_name": "大主宰",
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/2.jpg",
-            "book_des":"大千世界，位面交汇，万族林立，群雄荟萃，一位位来自下位面的天之至尊，在这无尽世界，演绎着令人向往的传奇，追求着那主宰之路。 无尽火域，炎帝执掌，万火焚苍穹。 ",
+            "book_des":"大千世界，位面交汇，万族林立，\n群雄荟萃，一位位来自下位面的天之至尊，\n在这无尽世界，演绎着令人向往的传奇，\n追求着那主宰之路。 无尽火域，炎帝执掌，\n万火焚苍穹。 ",
             "book_author":"天蚕土豆",
             "is_bookshelf":"1"
         },
@@ -93,7 +93,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
             "book_name": "鸿飞剑尊",
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/3.jpg",
-            "book_des":"家破人亡，沦为阶下囚的少年叶辰，获剑神传承。以无畏之心，报血海深仇，探寻身世之谜，登无上强者路！修剑道，凝天印，灵武合一，无敌诸天！ 恢宏大世谁主沉浮？ 我有一剑可断万古！",
+            "book_des":"家破人亡，沦为阶下囚的少年叶辰，\n获剑神传承。以无畏之心，报血海深仇，\n探寻身世之谜，登无上强者路！\n修剑道，凝天印，灵武合一，无敌诸天！\n 恢宏大世谁主沉浮？ 我有一剑可断万古！",
             "book_author":"天下剑宗",
             "is_bookshelf":"1"
         },
@@ -105,7 +105,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
             "book_name": "万古最强宗",
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/4.jpg",
-            "book_des":"废材？垃圾？本座调教下，全成为了天之骄子。圣尊？魔帝？本座念及修炼万载不易，收来做看门弟子。神器？至宝？本座弟子人手好几件。",
+            "book_des":"废材？垃圾？本座调教下，全成为了天之骄子。\n圣尊？魔帝？本座念及修炼万载不易，收来做看门弟子。\n神器？至宝？本座弟子人手好几件。",
             "book_author":"江湖再见",
             "is_bookshelf":"1"
         },
@@ -117,7 +117,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/热血玄幻/",
             "book_name": "我的冥王大人",
             "book_img_path":"../../Images/books_image/Bookshelf_image/rxxh/5.jpg",
-            "book_des":"自从梦中与一位自称冥王殿下的成婚后，我的生活发生了翻天覆地的变化，产生了一系类诙谐幽默又充满诡异色彩的故事。这位冥王殿下也好像赖上我了总是阴魂不散",
+            "book_des":"自从梦中与一位自称冥王殿下的成婚后，\n我的生活发生了翻天覆地的变化，\n产生了一系类诙谐幽默又充满诡异色彩的故事。\n这位冥王殿下也好像赖上我了总是阴魂不散",
             "book_author":"日照香炉",
             "is_bookshelf":"1"
         },
@@ -130,7 +130,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
             "book_name": "我有无数神剑",
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/1.jpg",
-            "book_des":"转世成为皇朝皇子周玄机，原以为会富贵一生，没想到遭遇宫廷恩怨，被迫逃离皇宫。让他惊喜的是前世发明的一款金手指程序竟然成真了！",
+            "book_des":"转世成为皇朝皇子周玄机，\n原以为会富贵一生，没想到遭遇宫廷恩怨，\n被迫逃离皇宫。让他惊喜的是前世发明的一款\n金手指程序竟然成真了！",
             "book_author":"需要梦想",
             "is_bookshelf":"1"
         },
@@ -142,7 +142,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
             "book_name": "医神重生",
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/2.jpg",
-            "book_des":"星空主宰，重生都市弃少，一手逆天医术，一手超凡神通。天榜第一，剑道宗师，神境强者，谁与争锋。这一世，震慑三界，逆转乾坤！这一世，执掌一切，君临星空！",
+            "book_des":"星空主宰，重生都市弃少，\n一手逆天医术，一手超凡神通。天榜第一，\n剑道宗师，神境强者，谁与争锋。\n这一世，震慑三界，逆转乾坤！\n这一世，执掌一切，君临星空！",
             "book_author":":天穹之上",
             "is_bookshelf":"1"
         },
@@ -154,9 +154,9 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
             "book_name": "永恒圣王",
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/3.jpg",
-            "book_des":"修仙觅长生，热血任逍遥，踏莲曳波涤剑骨，凭虚御风塑圣魂！",
+            "book_des":"修仙觅长生，热血任逍遥，\n踏莲曳波涤剑骨，凭虚御风塑圣魂！",
             "book_author":"雪满弓刀",
-            "is_bookshelf":"1"
+            "is_bookshelf":"0"
         },
         {
             "user":"visitor",
@@ -166,7 +166,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
             "book_name": "遮天",
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/4.jpg",
-            "book_des":"冰冷与黑暗并存的宇宙深处，九具庞大的龙尸拉着一口青铜古棺，亘古长存。这是太空探测器在枯寂的宇宙中捕捉到的一幅极其震撼的画面。九龙拉棺，究竟是回到了上古，还是来到了星空的彼岸？",
+            "book_des":"冰冷与黑暗并存的宇宙深处，\n九具庞大的龙尸拉着一口青铜古棺，亘古长存。\n这是太空探测器在枯寂的宇宙中捕捉到的一幅极其震撼的画面。\n九龙拉棺，究竟是回到了上古，还是来到了星空的彼岸？",
             "book_author":"辰东",
             "is_bookshelf":"1"
         },
@@ -178,7 +178,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/缥缈修仙/",
             "book_name": "最强弃少",
             "book_img_path":"../../Images/books_image/Bookshelf_image/pmxx/5.jpg",
-            "book_des":"叶默蓦然清醒过来的时候，才发现周围的一切似乎都变了，美女师父也不见了。他也发现了自己成了被世家抛弃的弃子，被别人退婚的苦逼,还是被女人站在讲台上拿着他情书羞辱的对象......",
+            "book_des":"叶默蓦然清醒过来的时候，才发现周围的一切似乎都变了，\n美女师父也不见了。他也发现了自己成了被世家抛弃的弃子，\n被别人退婚的苦逼,还是被女人站在讲台上拿着他情书羞辱的对象......",
             "book_author":"鹅是老五 ",
             "is_bookshelf":"1"
         },
@@ -191,7 +191,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
             "book_name": "背着步枪回明朝",
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/1.jpg",
-            "book_des":"穿越的时候救了个小公主，一不小心得罪了所有大臣。锦衣卫老想弄死他，东厂想替他保管财产，皇帝想磨磨他的棱角。不会混官场？那就打上司。 冷兵器没有？造个火药厂。 ",
+            "book_des":"穿越的时候救了个小公主，一不小心得罪了所有大臣。\n锦衣卫老想弄死他，东厂想替他保管财产，皇帝想磨磨他的棱角。\n不会混官场？那就打上司。 冷兵器没有？造个火药厂。 ",
             "book_author":"龙城剑士",
             "is_bookshelf":"1"
         },
@@ -203,7 +203,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
             "book_name": "乘龙佳婿",
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/2.jpg",
-            "book_des":"穿越三年，长在乡间，有母无父，不见大千。就在张寿安心种田教书的时候，有一天，一队车马造访，给他带来了一个未婚妻。当清俊闲雅的温厚乡下小郎君遭遇美艳任性的颜控千金大小姐，鸡飞狗跳的故事开始了。",
+            "book_des":"穿越三年，长在乡间，有母无父，不见大千。\n就在张寿安心种田教书的时候，有一天，一队车马造访，给他带来了一个未婚妻。\n当清俊闲雅的温厚乡下小郎君遭遇美艳任性的颜控千金大小姐，\n鸡飞狗跳的故事开始了。",
             "book_author":"府天",
             "is_bookshelf":"1"
         },
@@ -215,9 +215,9 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
             "book_name": "大明最后一个狠人",
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/3.jpg",
-            "book_des":"魂穿越到大明最后一个皇太子朱慈烺的身上，以一个狠字贯穿一生。杀建奴，灭流寇，斩贪官，开海禁，扬国威。这个太子很凶残，打仗比建奴还可怕",
+            "book_des":"魂穿越到大明最后一个皇太子朱慈烺的身上，以一个狠字贯穿一生。\n杀建奴，灭流寇，斩贪官，开海禁，扬国威。\n这个太子很凶残，打仗比建奴还可怕",
             "book_author":"大明第一帅",
-            "is_bookshelf":"1"
+            "is_bookshelf":"0"
         },
         {
             "user":"visitor",
@@ -227,9 +227,9 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
             "book_name": "带着军火库闯大明",
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/4.jpg",
-            "book_des":"公元1644年，崇祯帝砍杀皇宫嫔妃、公主等女眷，逃亡煤山，绝望中在一棵歪脖子树上结束了自己的生命。继任者弘光帝朱由崧，却是扶不起的阿斗，只知沉湎酒色。",
+            "book_des":"公元1644年，崇祯帝砍杀皇宫嫔妃、公主等女眷，\n逃亡煤山，绝望中在一棵歪脖子树上结束了自己的生命。\n继任者弘光帝朱由崧，却是扶不起的阿斗，只知沉湎酒色。",
             "book_author":"加勒比海贼王",
-            "is_bookshelf":"1"
+            "is_bookshelf":"0"
         },
         {
             "user":"visitor",
@@ -239,7 +239,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/历史军事/",
             "book_name": "重生之老子是皇帝",
             "book_img_path":"../../Images/books_image/Bookshelf_image/lsjs/5.jpg",
-            "book_des":"醉卧美人膝，醒掌天下权，这才是男人该有的生活！赵洞庭穿越成皇，为这个小目标不断奋斗。",
+            "book_des":"醉卧美人膝，醒掌天下权，这才是男人该有的生活！\n赵洞庭穿越成皇，为这个小目标不断奋斗。",
             "book_author":"贰蛋",
             "is_bookshelf":"1"
         },
@@ -252,7 +252,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
             "book_name": "暗黑系暖婚",
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/1.jpg",
-            "book_des":"笙笙，笙笙……他总是这样唤她，温柔而缱绻。别人是怎么形容他的，一身明华，公子如玉，矜贵优雅，呵，那是那些‘别人’没有看见过他拿着手术刀剖尸时的模样",
+            "book_des":"笙笙，笙笙……他总是这样唤她，\n温柔而缱绻。别人是怎么形容他的，一身明华，\n公子如玉，矜贵优雅，呵，那是那些‘别人’\n没有看见过他拿着手术刀剖尸时的模样",
             "book_author":"顾南西",
             "is_bookshelf":"1"
         },
@@ -264,7 +264,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
             "book_name": "夫人你的马甲又掉了",
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/2.jpg",
-            "book_des":"【腹黑慵懒巨有钱男主vs高岭之花藏得深女主】秦苒，从小在乡下长大，高三失踪一年，休学一年。一年后，她被亲生母亲接到云城一中借读。",
+            "book_des":"【腹黑慵懒巨有钱男主vs高岭之花藏得深女主】\n秦苒，从小在乡下长大，高三失踪一年，休学一年。\n一年后，她被亲生母亲接到云城一中借读。",
             "book_author":"一路烦花",
             "is_bookshelf":"1"
         },
@@ -276,7 +276,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
             "book_name": "萌宝快递请签收",
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/3.jpg",
-            "book_des":"【正文已完结】她是走投无路的落魄千金，他是高高在上的商业大亨。 黑暗之中，他无情的说，你不过是我的工具。结果，她的身影却夜夜入梦。 ",
+            "book_des":"【正文已完结】她是走投无路的落魄千金，\n他是高高在上的商业大亨。 黑暗之中，他无情的说，\n你不过是我的工具。\n结果，她的身影却夜夜入梦。 ",
             "book_author":"密云不雨",
             "is_bookshelf":"1"
         },
@@ -288,7 +288,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
             "book_name": "女总裁的全能兵王",
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/4.jpg",
-            "book_des":"为了男人的承诺，萧晨强势回归，化身美女总裁的贴身保镖，横扫八方之敌，谱写王者传奇！他——登巅峰，掌生死，纵横世界，醒掌天下权； ",
+            "book_des":"为了男人的承诺，萧晨强势回归，\n化身美女总裁的贴身保镖，横扫八方之敌，谱写王者传奇！\n他——登巅峰，掌生死，纵横世界，醒掌天下权； ",
             "book_author":"寂寞的舞者",
             "is_bookshelf":"1"
         },
@@ -300,7 +300,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
             "book_name": "与爱为邻",
             "book_img_path":"../../Images/books_image/Bookshelf_image/xdyq/5.jpg",
-            "book_des":"她与他，为着古安两家的利益结合，筹谋中她抽身离开；她与他，素不相识却阴错阳差顶替了远去的她；",
+            "book_des":"她与他，为着古安两家的利益结合，\n筹谋中她抽身离开；她与他，\n素不相识却阴错阳差顶替了远去的她；",
             "book_author":"秋夜雨寒",
             "is_bookshelf":"1"
         },
@@ -313,7 +313,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/古代言情/",
             "book_name": "今夕清影何处觅",
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/1.jpg",
-            "book_des":"一个腹黑冷情的现代女汉子，穿越成爹不疼后娘害的软妹纸！遇上霸道冷酷武宣王，只手遮天、权倾朝野，传闻说，他睡过的女人比吃过的饭都多，可是一夜贪欢之后，他竟对她痴缠不止",
+            "book_des":"一个腹黑冷情的现代女汉子，\n穿越成爹不疼后娘害的软妹纸！遇上霸道冷酷武宣王，\n只手遮天、权倾朝野，传闻说，\n他睡过的女人比吃过的饭都多，\n可是一夜贪欢之后，他竟对她痴缠不止",
             "book_author":"秦落烟傅子墨",
             "is_bookshelf":"1"
         },
@@ -325,7 +325,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/现代言情/",
             "book_name": "神医凰后",
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/2.jpg",
-            "book_des":"她，21世纪王牌特工，被家族遗弃的天才少女； 他，傲娇腹黑帝国太子，一怒天下变的至高王者；她扮猪吃虎坑他、虐他、刺激他、每次撩完就跑。是个男人就忍不了！ ",
+            "book_des":"她，21世纪王牌特工，被家族遗弃的天才少女； \n他，傲娇腹黑帝国太子，一怒天下变的至高王者；\n她扮猪吃虎坑他、虐他、刺激他、每次撩完就跑。\n是个男人就忍不了！ ",
             "book_author":"苏小暖",
             "is_bookshelf":"1"
         },
@@ -337,7 +337,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/古代言情/",
             "book_name": "邪王的倾城狂妃",
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/3.jpg",
-            "book_des":"万古帝女，全家惨死，借传世之宝，独留一缕残魂。废柴？丑八怪？化妆成丑女，是因为倾世容颜太惹眼？体内神秘气团，助她屡得奇宝，别人只能干红眼。天价丹药一枚难求，火焰药组甘愿为她无限炼制。 ",
+            "book_des":"万古帝女，全家惨死，借传世之宝，\n独留一缕残魂。废柴？丑八怪？\n化妆成丑女，是因为倾世容颜太惹眼？\n体内神秘气团，助她屡得奇宝，别人只能干红眼。\n天价丹药一枚难求，火焰药组甘愿为她无限炼制。 ",
             "book_author":"糖心龙蛋",
             "is_bookshelf":"1"
         },
@@ -349,7 +349,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/古代言情/",
             "book_name": "医妃倾天下",
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/4.jpg",
-            "book_des":"天才医学博士穿越成楚王弃妃，刚来就遇上重症伤者，她秉持医德去救治，却差点被打下冤狱。太上皇病危，她设法救治，被那可恨的毒王误会斥责，莫非真的是好人难做？这男人整日给她使绊子就算了，最不可忍的是他竟还..",
+            "book_des":"天才医学博士穿越成楚王弃妃，刚来就遇上重症伤者，\n她秉持医德去救治，却差点被打下冤狱。\n太上皇病危，她设法救治，被那可恨的毒王误会斥责，\n莫非真的是好人难做？这男人整日给她使绊子就算了，\n最不可忍的是他竟还..",
             "book_author":"元卿凌",
             "is_bookshelf":"1"
         },
@@ -361,7 +361,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/古代言情/",
             "book_name": "重生之将门毒后",
             "book_img_path":"../../Images/books_image/Bookshelf_image/gdyq/5.jpg",
-            "book_des":"将门嫡女，贞静柔婉，痴恋定王，自奔为眷。六年辅佐，终成母仪天下。陪他打江山，兴国土，涉险成为他国人质，五年归来，后宫已无容身之所。他怀中的美人笑容明艳：'姐姐，江山定了，你也该退了。'",
+            "book_des":"将门嫡女，贞静柔婉，痴恋定王，自奔为眷。\n六年辅佐，终成母仪天下。陪他打江山，兴国土，\n涉险成为他国人质，五年归来，后宫已无容身之所。\n他怀中的美人笑容明艳：'姐姐，江山定了，你也该退了。'",
             "book_author":"千山茶客",
             "is_bookshelf":"1"
         },
@@ -374,7 +374,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
             "book_name": "狂医废材妃",
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/1.jpg",
-            "book_des":"退无可退，她怒：“你想怎样！”某妖孽长臂一揽，将爪牙锋利的人儿狠狠禁入怀中，道：“你嫁我娶，你躺我上，就这样。”",
+            "book_des":"退无可退，她怒：“你想怎样！”\n某妖孽长臂一揽，将爪牙锋利的人儿狠狠禁入怀中，\n道：“你嫁我娶，你躺我上，就这样。”",
             "book_author":"连玦",
             "is_bookshelf":"1"
         },
@@ -386,7 +386,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
             "book_name": "时光漫漫只为遇见你",
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/2.jpg",
-            "book_des":"重生夜家废物继承人？说姐废，吊打！极品亲戚，碾压！十项全能混合体，迷弟迷妹哭着求着要求抱大腿！顺便接收系统一枚，秒臣服，天天各种献狗腿。 ",
+            "book_des":"重生夜家废物继承人？\n说姐废，吊打！极品亲戚，碾压！十项全能混合体，\n迷弟迷妹哭着求着要求抱大腿！顺便接收系统一枚，\n秒臣服，天天各种献狗腿。 ",
             "book_author":"十八夜",
             "is_bookshelf":"1"
         },
@@ -398,7 +398,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
             "book_name": "天命凰谋",
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/3.jpg",
-            "book_des":"女兵王穿越成废材小萝莉，杠上可盐可甜最强鬼君。她是史上第一传奇女兵王，一朝穿越，竟被渣男给卖了！！不能修炼、惨遭抛弃、百世诅咒加身，不得善终？",
+            "book_des":"女兵王穿越成废材小萝莉，\n杠上可盐可甜最强鬼君。她是史上第一传奇女兵王，\n一朝穿越，竟被渣男给卖了！！\n不能修炼、惨遭抛弃、百世诅咒加身，不得善终？",
             "book_author":"MS芙子",
             "is_bookshelf":"1"
         },
@@ -410,9 +410,9 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
             "book_name": "王牌女特工",
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/4.jpg",
-            "book_des":"她，是令国际大佬们闻风丧胆的修罗岛岛主，意外成为普通高三女学生。私奔被逮，对方家长上门讨要说法？学习太差，极品亲戚贬低攀比？",
+            "book_des":"她，是令国际大佬们闻风丧胆的修罗岛岛主，\n意外成为普通高三女学生。私奔被逮，\n对方家长上门讨要说法？学习太差，极品亲戚贬低攀比？",
             "book_author":"末烟",
-            "is_bookshelf":"1"
+            "is_bookshelf":"0"
         },
         {
             "user":"visitor",
@@ -422,7 +422,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/幻想言情/",
             "book_name": "云家小九超皮哒",
             "book_img_path":"../../Images/books_image/Bookshelf_image/hxyq/5.jpg",
-            "book_des":" 她是王牌特工，却穿越成邺城第一废柴奇葩女！本小姐是丑女？化茧成蝶，亮瞎你的钛金势利眼！本小姐是废柴？天雷在手！劈的你外焦里嫩香喷喷！",
+            "book_des":" 她是王牌特工，却穿越成邺城第一废柴奇葩女！\n本小姐是丑女？化茧成蝶，亮瞎你的钛金势利眼！\n本小姐是废柴？天雷在手！劈的你外焦里嫩香喷喷！",
             "book_author":"水清竹",
             "is_bookshelf":"1"
         },
@@ -435,9 +435,9 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/萌甜校园/",
             "book_name": "帝少宠妻有点甜",
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/1.jpg",
-            "book_des":"亲眼目睹未婚夫出轨，她闪婚'贫困潦倒'的穷二代。隔天，珠宝、钻石、高级定制服装、豪车豪宅收到手软。他是人前高冷腹黑的霸道总裁，也是人后宠老婆、疼老婆、爱老婆的三好男人。",
+            "book_des":"亲眼目睹未婚夫出轨，她闪婚'贫困潦倒'的穷二代。\n隔天，珠宝、钻石、高级定制服装、豪车豪宅收到手软。\n他是人前高冷腹黑的霸道总裁，\n也是人后宠老婆、疼老婆、爱老婆的三好男人。",
             "book_author":"甜甜西米露",
-            "is_bookshelf":"1"
+            "is_bookshelf":"0"
         },
         {
             "user":"visitor",
@@ -447,7 +447,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/萌甜校园/",
             "book_name": "恰似寒光遇骄阳",
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/2.jpg",
-            "book_des":"一觉醒来，她看着镜子里的自己，爆炸头血腥纹身脸化得像鬼，多看一秒都辣眼睛。重生前，她另有所爱，一心逃离，对他恨之入骨。",
+            "book_des":"一觉醒来，她看着镜子里的自己，\n爆炸头血腥纹身脸化得像鬼，多看一秒都辣眼睛。\n重生前，她另有所爱，一心逃离，对他恨之入骨。",
             "book_author":"囧囧有妖 ",
             "is_bookshelf":"1"
         },
@@ -461,7 +461,7 @@
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/3.jpg",
             "book_des":"这家伙，口味是有多重，这都下得去口？",
             "book_author":"时浅汐",
-            "is_bookshelf":"1"
+            "is_bookshelf":"0"
         },
         {
             "user":"visitor",
@@ -471,7 +471,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/萌甜校园/",
             "book_name": "许你万丈光芒好",
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/4.jpg",
-            "book_des":"'你救了我，我让我爹地以身相许！'宁夕意外救了只小包子，结果被附赠了一只大包子。婚后，陆霆骁宠妻如命千依百顺，虐起狗来连亲儿子都不放过。'老板，公司真给夫人拿去玩？'",
+            "book_des":"'你救了我，我让我爹地以身相许！\n'宁夕意外救了只小包子，结果被附赠了一只大包子。\n婚后，陆霆骁宠妻如命千依百顺，虐起狗来连亲儿子都不放过。\n'老板，公司真给夫人拿去玩？'",
             "book_author":"宁夕陆霆骁",
             "is_bookshelf":"1"
         },
@@ -483,7 +483,7 @@
             "book_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/book/萌甜校园/",
             "book_name": "云月不知情起时",
             "book_img_path":"../../Images/books_image/Bookshelf_image/mtxy/5.jpg",
-            "book_des":"'女人，我不会娶你。'这是他对她说的第一句话。她清楚他们之间的关系，本分的充当他的假'未婚妻'，和他保持着足够安全的距离。",
+            "book_des":"'女人，我不会娶你。\n'这是他对她说的第一句话。她清楚他们之间的关系，\n本分的充当他的假'未婚妻'，和他保持着足够安全的距离。",
             "book_author":"言晚霍黎辰",
             "is_bookshelf":"1"
         }

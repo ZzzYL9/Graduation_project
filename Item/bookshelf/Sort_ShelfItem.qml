@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.13
 import "../../"
 
 Rectangle{
@@ -67,7 +67,21 @@ Rectangle{
             height: 7/8*parent.width
             Text {
                 id: des
-                text: book_des
+                color: "black"
+                anchors.fill: parent
+                verticalAlignment: TextInput.AlignVCenter
+                horizontalAlignment: TextInput.AlignHCenter
+                leftPadding: 5 //QtQuick 2.13 间隔
+                rightPadding: 5
+                text: qsTr(book_des)
+//                    lineHeight: Text.ProportionalHeight //设置行间距
+                lineHeight: 0.7 //行间距比例 最大 1
+                wrapMode: Text.WordWrap //换行
+                //elide 省略模式 wrap 换行模式
+                //contentWidth 手动设置字体显示的宽与高
+                font.pixelSize: 15
+                fontSizeMode: Text.Fit //固定 Text 显示大小->字体自动变化的模式选中还有几种看文档
+                minimumPixelSize: 10 //设置自动变化最小字体大小
             }
         }
 
