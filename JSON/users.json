@@ -15,6 +15,14 @@
 	"user_note": "0",
 	"user_info": "0"
 	
+},
+{	"user_name": "bbb",
+	"user_psw": "bbb",
+	"user_shelf_path": "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/bbb.json",
+	"user_read_history": "0",
+	"user_note": "0",
+	"user_info": "0"
+	
 }
 ]
 }

@@ -1,9 +1,12 @@
 import QtQuick 2.0
 import QtQuick.Controls 1.4
+import QtQuick.Dialogs 1.3
 import "../common"
 import "../Item/bookshelf"
 import "../"
 import "../View/readview"
+import "./savejson.js" as Data
+
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -14,13 +17,15 @@ StackView{
     height:rootwindow.height
 
 
-    property alias book_timer: flush_shelf
     // Settings是全局变量，这里读取的，在分类中也会显示
+    property var user_book_path: "/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/"
+
+    property var book_name: ""
 
     function setmodel_shelf(){
         listmodel.clear()
 
-        fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/"+Settings.user_name_global+".json")
+        fileio.setSource(user_book_path+Settings.user_name_global+".json")
 //        fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/aaa.json")
         console.log("登录用户:"+Settings.user_name_global)
         var json = JSON.parse(fileio.text)
@@ -121,6 +126,16 @@ StackView{
                 Book_ShelfItem{
                 width: bookshelfview.cellWidth;
                 height: bookshelfview.cellHeight;
+//                MouseArea{
+//                    anchors.fill: parent
+//                    onPressAndHold: {
+//                        console.log(bookname)
+//                        book_name=bookname
+//                        myMsgbox.visible=true
+//                    }
+
+//                }
+
                 onOpenSource: {
                     console.log(book_path+bookname+bookindex)
                     Settings.bookShelf.loadBook(book_path+bookname,bookname,bookindex)

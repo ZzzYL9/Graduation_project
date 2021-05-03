@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.0
 import "./MineView"
 import "./HomeView"
 import "../common"
+import "../"
 
 StackView{
     id:wodepage
@@ -320,6 +321,38 @@ StackView{
                     wodepage.push(findpage)
                     swipeview.interactive=false
                     basebar.visible=false
+                }
+
+            }
+            Button {
+                id: button11
+                flat: true
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                Image {
+                    height: button11.height/2
+                    width: button11.height/2
+                    anchors.centerIn: parent
+                    source: "qrc:/Images/my/logout.png"
+                }
+                Text{
+                    text:qsTr("注销")
+                    font.pixelSize: parent.height/8
+                    font.family: "方正准圆简体"
+                    anchors.bottom: parent.bottom
+                    anchors.horizontalCenter: button11.horizontalCenter
+                }
+                Layout.preferredHeight: 80
+                Layout.preferredWidth: 80
+                Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                onClicked: {
+                    onlogin=false
+                    Settings.user_name_global="NULL"
+                    Settings.flush=true
+                    Settings.is_log=0
+                    Settings.btn_enable=false
+                    Settings.btn_text="加入书架(需登录使用)"
+                    swipeview.interactive=false
                 }
 
             }

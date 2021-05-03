@@ -221,5 +221,6 @@
         <file>JSON/books.json</file>
         <file>JSON/data.json</file>
         <file>JSON/note.json</file>
+        <file>Images/my/logout.png</file>
     </qresource>
 </RCC>
