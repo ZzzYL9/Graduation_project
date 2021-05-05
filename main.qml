@@ -35,12 +35,12 @@ ApplicationWindow {
 
 
         //分析
-        AnalyzeView{
-            id: analyzeview
-            width: rootwindow.width;
-            height: rootwindow.height;
+//        AnalyzeView{
+//            id: analyzeview
+//            width: rootwindow.width;
+//            height: rootwindow.height;
 
-        }
+//        }
 
         //我的
         MineView{}
@@ -65,7 +65,7 @@ ApplicationWindow {
         Component.onCompleted: {
             myModel.append({ "modelText": "首页", "modelColor": "#000000", "modelColorG": "#1296db", "modelSrc": "qrc:/Images/guide/homepage.png", "modelSrcG": "qrc:/Images/guide/homepage_after.png"})
             myModel.append({ "modelText": "书架", "modelColor": "#000000", "modelColorG": "#1296db", "modelSrc": "qrc:/Images/guide/books.png", "modelSrcG": "qrc:/Images/guide/books_after.png"})
-            myModel.append({ "modelText": "分析", "modelColor": "#000000", "modelColorG": "#1296db", "modelSrc": "qrc:/Images/guide/analogy.png", "modelSrcG": "qrc:/Images/guide/analogy_after.png"})
+//            myModel.append({ "modelText": "分析", "modelColor": "#000000", "modelColorG": "#1296db", "modelSrc": "qrc:/Images/guide/analogy.png", "modelSrcG": "qrc:/Images/guide/analogy_after.png"})
             myModel.append({ "modelText": "我的", "modelColor": "#000000", "modelColorG": "#1296db", "modelSrc": "qrc:/Images/guide/me.png", "modelSrcG": "qrc:/Images/guide/me_after.png"})
         }
     }

@@ -222,5 +222,11 @@
         <file>JSON/data.json</file>
         <file>JSON/note.json</file>
         <file>Images/my/logout.png</file>
+        <file>Images/homepage/gridimg/dj.png</file>
+        <file>Images/homepage/gridimg/jx.png</file>
+        <file>Images/homepage/gridimg/man.png</file>
+        <file>Images/homepage/gridimg/mh.png</file>
+        <file>Images/homepage/gridimg/tg.png</file>
+        <file>Images/homepage/gridimg/woman.png</file>
     </qresource>
 </RCC>

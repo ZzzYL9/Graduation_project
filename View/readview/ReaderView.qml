@@ -29,6 +29,9 @@ Rectangle{
     property int positionstarts: -1
     property int positionends: -1
     property int positiony: -1
+    property var current_book: ""
+    property var text_content: ""
+
 
     Timer{
         interval: 1;
@@ -42,13 +45,14 @@ Rectangle{
             var count = json.NOTE.length
             for (var i in json.NOTE) {
                 var t = json.NOTE[ i ];
-                t.book=parseInt(t.book);
-                t.ty=parseInt(t.ty);
-                t.num=parseInt(t.num);
-                t.ttxt=parseInt(t.ttxt);
-                t.positionstart=parseInt(t.positionstart);
-                t.positionend=parseInt(t.positionend);
-                m.append( t );
+                if(t.users===Settings.user_name_global&&t.book===current_book){
+                    t.ty=parseInt(t.ty);
+                    t.num=parseInt(t.num);
+                    t.ttxt=parseInt(t.ttxt);
+                    t.positionstart=parseInt(t.positionstart);
+                    t.positionend=parseInt(t.positionend);
+                    m.append( t );
+                }
             }
         }
     }
@@ -71,8 +75,9 @@ Rectangle{
             }
         }
 
+        console.log("存储笔记:"+current_book)
         //存储数据——————————————————————————
-        var data = {"users":"a","book":Settings.bookShelf.currentBook,"thetext":arguments[1],"thesource":"../../Images/readview/biji.png","num":num,"ty":arguments[3],"bookimage":"qrc"+Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).image,"positionstart":arguments[2],"positionend":arguments[4],"ttxt":Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart};
+        var data = {"users":Settings.user_name_global,"current_book":current_book,"thetext":arguments[1],"thesource":"../../Images/readview/biji.png","num":num,"ty":arguments[3],"bookimage":"qrc"+Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).image,"positionstart":arguments[2],"positionend":arguments[4],"ttxt":Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart};
         m.append(data)
         fileio.setSource("/run/media/root/759b8514-9f40-4637-bd8f-4200833df628/final_design/ReadClient-master/JSON/note.json")
         var res = Data.setnote(m);
@@ -1017,7 +1022,7 @@ Rectangle{
                     anchors.leftMargin: 20
                     anchors.top: parent.top
                     anchors.topMargin: 10
-                    text: "用户"+users
+                    text: "用户:"+users
                     clip: true
                     id:use
                 }
@@ -1030,7 +1035,7 @@ Rectangle{
                     anchors.topMargin: 10
                     anchors.top: use.bottom
                     clip: true
-                    text:"内容"+thetext
+                    text:"内容:"+thetext
                 }
 
             }

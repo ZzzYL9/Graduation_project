@@ -38,7 +38,7 @@ Rectangle{
                 id: book_name
                 text: bookname
 //                anchors.centerIn: parent
-                font.pointSize: 13
+                font.pointSize: 10
                 font.bold: true
             }
         }
@@ -75,7 +75,7 @@ Rectangle{
                 rightPadding: 5
                 text: qsTr(book_des)
 //                    lineHeight: Text.ProportionalHeight //设置行间距
-                lineHeight: 0.7 //行间距比例 最大 1
+                lineHeight: 1 //行间距比例 最大 1
                 wrapMode: Text.WordWrap //换行
                 //elide 省略模式 wrap 换行模式
                 //contentWidth 手动设置字体显示的宽与高
@@ -92,7 +92,7 @@ Rectangle{
 //                openSource(index);
 //                console.log(index)
 
-                openSource(bookindex)
+                openSource(Settings.bookShelf.currentBook)
             }
             onEntered: {
                 delegate.width=root.width-1/3*parent.width;

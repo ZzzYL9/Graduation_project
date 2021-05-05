@@ -140,14 +140,14 @@ StackView{
                     console.log(book_path+bookname+bookindex)
                     Settings.bookShelf.loadBook(book_path+bookname,bookname,bookindex)
 
-                    Settings.bookShelf.currentBook=bookindex;
-                    console.log(bookindex);
+//                    Settings.bookShelf.currentBook=bookindex;
+//                    console.log(bookindex);
                     Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart=0
                     console.log("start")
                     console.log(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).chartAt(Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart).str)
                     console.log("end")
 
-                    bookstack.push(readview)
+                    bookstack.push(readview,{current_book:bookname})
 //                        readview.visible=true;
                     //顶、底部导航隐藏
 //                    topBars.visible=false;
@@ -167,11 +167,11 @@ StackView{
             ReaderView {
                 visible: false;
                 //anchors.fill: parent
-               width: rootwindow.width;
-               height: rootwindow.height;
-               type:0
-               bookname:""
-
+                width: rootwindow.width;
+                height: rootwindow.height;
+                type:0
+                bookname:""
+                current_book:""
             }
     }
 }

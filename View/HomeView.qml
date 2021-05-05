@@ -219,24 +219,24 @@ StackView {
             sorttitle: qsTr("女生")
         }
     }
-    Component{
-        id:reference
-        SortView{
-            sorttitle: qsTr("独家")
-        }
-    }
-    Component{
-        id:practice
-        SortView{
-            sorttitle: qsTr("漫画")
-        }
-    }
-    Component{
-        id:news
-        SortView{
-            sorttitle: qsTr("听书")
-        }
-    }
+//    Component{
+//        id:reference
+//        SortView{
+//            sorttitle: qsTr("独家")
+//        }
+//    }
+//    Component{
+//        id:practice
+//        SortView{
+//            sorttitle: qsTr("漫画")
+//        }
+//    }
+//    Component{
+//        id:news
+//        SortView{
+//            sorttitle: qsTr("听书")
+//        }
+//    }
     Component{
         id:findpage
         Findview{}

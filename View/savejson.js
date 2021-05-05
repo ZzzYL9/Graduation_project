@@ -91,7 +91,7 @@ function setnote(model) {
     for(var i = 0; i < model.count; ++i) {
         res += "\n{\t";
         var e = model.get(i);
-        res += "\"book\": \""   +　e.book + "\",\n\t";
+        res += "\"book\": \""   +　e.current_book + "\",\n\t";
         res += "\"users\": \""   +　e.users + "\",\n\t";
         res += "\"thetext\": \""   +　e.thetext + "\",\n\t";
         res += "\"thesource\": \""   +　e.thesource + "\",\n\t";

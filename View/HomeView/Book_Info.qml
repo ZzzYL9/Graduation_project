@@ -153,7 +153,7 @@ Rectangle{
                     rightPadding: 5
                     text: qsTr("  简介："+book_des)
     //                    lineHeight: Text.ProportionalHeight //设置行间距
-                    lineHeight: 0.7 //行间距比例 最大 1
+                    lineHeight: 1 //行间距比例 最大 1
                     wrapMode: Text.WordWrap //换行
                     //elide 省略模式 wrap 换行模式
                     //contentWidth 手动设置字体显示的宽与高
@@ -190,7 +190,7 @@ Rectangle{
                     id:shelf_btn_t
                     text: Settings.btn_text
                     font.bold: true
-                    font.pointSize: 14
+                    font.pointSize: 12
                     anchors.centerIn: parent
                 }
 
@@ -208,7 +208,7 @@ Rectangle{
                 Text{
                     text: qsTr("立即阅读")
                     font.bold: true
-                    font.pointSize: 14
+                    font.pointSize: 12
                     anchors.centerIn: parent
                 }
 
@@ -216,22 +216,23 @@ Rectangle{
                     console.log(book_path+book_name+bookindex)
                     Settings.bookShelf.loadBook(book_path+book_name,book_name,bookindex)
                     console.log(book_path+book_name)
-                    Settings.bookShelf.currentBook=bookindex;
+//                    Settings.bookShelf.currentBook=bookindex;
                     Settings.bookShelf.booksAt(Settings.bookShelf.currentBook).currentChart=0
-                    homeview.push(readview,{type:1})
+                    homeview.push(readview,{type:1,current_book:book_name})
                 }
             }
         }
     }
 
     function join_shelf(){
+        user_books.clear()
         fileio.setSource(user_book_path+Settings.user_name_global+".json")
         var json = JSON.parse(fileio.text)
         var count = json.BOOKS.length
         var content
         for(var i in json.BOOKS){
             var user_books_shelf
-            if(json.BOOKS[i].book_name===book_name){
+            if(json.BOOKS[i].book_name===book_name&&json.BOOKS[i].is_bookshelf!==0){
                 content = json.BOOKS[i]
                 user_books_shelf={"user":content.user,"book_index":content.book_index,"type_num":content.type_num,"type_name":content.type_name,"book_path":content.book_path,"book_name":content.book_name,"book_img_path":content.book_img_path,"book_des":content.book_des,"book_author":content.book_author,"is_bookshelf":"0"}
                 user_books.append(user_books_shelf)
@@ -254,13 +255,13 @@ Rectangle{
     Component {
             id: readview
             ReaderView {
-//                visible: false;
-                //anchors.fill: parent
-               width: rootwindow.width;
-               height: rootwindow.height;
-               type:0
-               bookname:""
-
+            //visible: false;
+            //anchors.fill: parent
+            width: rootwindow.width;
+            height: rootwindow.height;
+            type:0
+            bookname:""
+            current_book:""
             }
     }
 
